@@ -1,0 +1,536 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1300" viewBox="0 0 1900 1300" font-family="sans-serif">
+<rect width="1900" height="1300" fill="#ffffff"/>
+<text x="20" y="30" font-size="17" font-weight="bold" text-anchor="start" fill="#000">PC-9801UX-31 ホストアダプタ: 論理記号で見た信号の流れ（導通で全ピンを確認、2026-10-25。解析結果（findings）の「UX-31 のホストアダプタの論理（式）」を図にしたもの）</text>
+<text x="20" y="52" font-size="12" text-anchor="start" fill="#333">正論理で描く（内部の信号はすべて H で有効）。R、W、D、E、RST = IOR0、IOW0、DACK0、EOP#、RESET0 を 74LS14 で反転したもの。SASI の信号も受信のインバータ（74LS240）を通したあとの正論理。色の付いた名前は、同じ名前どうしがつながるネット。灰色の文字は IC の位置。◇ はオープンコレクタ。</text>
+<text x="20" y="70" font-size="12" text-anchor="start" fill="#333">名前の後ろの #（REQ#）はピンの上で L が有効な信号（負論理）。C-bus の信号は末尾の 0 が負論理。○ は反転（入力の ○ は 0 で効く）。クロックの ▷ は立ち上がり、○▷ は立ち下がりで取り込む。</text>
+<rect x="20" y="78" width="12" height="12" fill="#167a2e"/>
+<text x="36" y="88" font-size="12" text-anchor="start" fill="#167a2e">C バス（P2）と、それを反転した R、W、D、E、RST</text>
+<rect x="350" y="78" width="12" height="12" fill="#c2410c"/>
+<text x="366" y="88" font-size="12" text-anchor="start" fill="#c2410c">SASI の制御信号（P1 と、その受信 / 出力）</text>
+<rect x="640" y="78" width="12" height="12" fill="#8a2be2"/>
+<text x="656" y="88" font-size="12" text-anchor="start" fill="#8a2be2">SASI のデータ（P1 の DT、DTIN、ODR）</text>
+<rect x="900" y="78" width="12" height="12" fill="#0040a0"/>
+<text x="916" y="88" font-size="12" text-anchor="start" fill="#0040a0">ボードの中だけで使う信号</text>
+<g transform="translate(0,32)">
+<rect x="10" y="70" width="520" height="700" rx="8" fill="#eef4ff" stroke="#bbb"/>
+<text x="20" y="90" font-size="14" font-weight="bold" text-anchor="start" fill="#000">1. アドレスの解読とストローブ（11A、11B、6A、6B、7B、7A）</text>
+<path d="M110,170.0 H131.0 A23.0,23.0 0 0 1 131.0,216.0 H110 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M110,110 L110,276" fill="none" stroke="#000" stroke-width="1.4"/>
+<path d="M84,118.3 L110,118.3" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="122.3" font-size="11" text-anchor="end" fill="#167a2e">AB07</text>
+<circle cx="106" cy="134.9" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M84,134.9 L102,134.9" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="138.9" font-size="11" text-anchor="end" fill="#167a2e">AB06</text>
+<circle cx="106" cy="151.5" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M84,151.5 L102,151.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="155.5" font-size="11" text-anchor="end" fill="#167a2e">AB05</text>
+<circle cx="106" cy="168.1" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M84,168.1 L102,168.1" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="172.1" font-size="11" text-anchor="end" fill="#167a2e">AB04</text>
+<circle cx="106" cy="184.7" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M84,184.7 L102,184.7" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="188.7" font-size="11" text-anchor="end" fill="#167a2e">AB03</text>
+<circle cx="106" cy="201.3" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M84,201.3 L102,201.3" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="205.3" font-size="11" text-anchor="end" fill="#167a2e">AB02</text>
+<circle cx="106" cy="217.9" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M84,217.9 L102,217.9" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="221.9" font-size="11" text-anchor="end" fill="#167a2e">AB00</text>
+<circle cx="106" cy="234.5" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M84,234.5 L102,234.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="238.5" font-size="11" text-anchor="end" fill="#167a2e">AB10</text>
+<circle cx="106" cy="251.1" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M84,251.1 L102,251.1" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="255.1" font-size="11" text-anchor="end" fill="#167a2e">AB11</text>
+<circle cx="106" cy="267.7" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M84,267.7 L102,267.7" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="271.7" font-size="11" text-anchor="end" fill="#0040a0">CPUENB#</text>
+<path d="M154,193.0 L180,193.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="183" y="197.0" font-size="11" text-anchor="start" fill="#0040a0">SEL8x</text>
+<text x="132.0" y="289" font-size="9" text-anchor="middle" fill="#666">74LS138 × 2 + 74LS02（6A）</text>
+<text x="110" y="300" font-size="10" text-anchor="start" fill="#a00000">AB08、AB09、AB12 以上は見ない → 180h、280h、380h にもイメージが出る</text>
+<path d="M330,120.0 H355.0 A19.0,19.0 0 0 1 355.0,158.0 H330 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M304,129.5 L330,129.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="301" y="133.5" font-size="11" text-anchor="end" fill="#0040a0">SEL8x</text>
+<circle cx="326" cy="148.5" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M304,148.5 L322,148.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="301" y="152.5" font-size="11" text-anchor="end" fill="#167a2e">AB01</text>
+<path d="M374,139.0 L400,139.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="403" y="143.0" font-size="11" text-anchor="start" fill="#0040a0">SEL80</text>
+<path d="M330,190.0 H355.0 A19.0,19.0 0 0 1 355.0,228.0 H330 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M304,199.5 L330,199.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="301" y="203.5" font-size="11" text-anchor="end" fill="#0040a0">SEL8x</text>
+<path d="M304,218.5 L330,218.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="301" y="222.5" font-size="11" text-anchor="end" fill="#167a2e">AB01</text>
+<path d="M374,209.0 L400,209.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="403" y="213.0" font-size="11" text-anchor="start" fill="#0040a0">SEL82</text>
+<path d="M110,340.0 H135.0 A19.0,19.0 0 0 1 135.0,378.0 H110 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M84,349.5 L110,349.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="353.5" font-size="11" text-anchor="end" fill="#167a2e">R</text>
+<path d="M84,368.5 L110,368.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="372.5" font-size="11" text-anchor="end" fill="#0040a0">SEL82</text>
+<path d="M154,359.0 L180,359.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="183" y="363.0" font-size="11" text-anchor="start" fill="#0040a0">RD82</text>
+<text x="132.0" y="391" font-size="9" text-anchor="middle" fill="#666">74LS00（6B）</text>
+<path d="M110,400.0 H135.0 A19.0,19.0 0 0 1 135.0,438.0 H110 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M84,409.5 L110,409.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="413.5" font-size="11" text-anchor="end" fill="#167a2e">W</text>
+<path d="M84,428.5 L110,428.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="432.5" font-size="11" text-anchor="end" fill="#0040a0">SEL82</text>
+<path d="M154,419.0 L180,419.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="183" y="423.0" font-size="11" text-anchor="start" fill="#0040a0">WR82</text>
+<text x="132.0" y="451" font-size="9" text-anchor="middle" fill="#666">74LS00（6B）</text>
+<path d="M76,480.0 H101.0 A19.0,19.0 0 0 1 101.0,518.0 H76 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M60,489.5 L76,489.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="57" y="493.5" font-size="11" text-anchor="end" fill="#167a2e">D</text>
+<path d="M60,508.5 L76,508.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="57" y="512.5" font-size="11" text-anchor="end" fill="#0040a0">DMAE</text>
+<path d="M120,499.0 L136,499.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M170,460.0 Q184,479.0 170,498.0 Q198.6,498.0 214,479.0 Q198.6,460.0 170,460.0 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M152,469.5 L175.25,469.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="149" y="473.5" font-size="11" text-anchor="end" fill="#0040a0">SEL80</text>
+<path d="M152,488.5 L175.25,488.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M214,479.0 L232,479.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M136,499.0 L144,499.0 L144,488.5 L152,488.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M280,450.5 H305.0 A19.0,19.0 0 0 1 305.0,488.5 H280 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M262,460.0 L280,460.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="259" y="464.0" font-size="11" text-anchor="end" fill="#167a2e">R</text>
+<path d="M262,479.0 L280,479.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M324,469.5 L342,469.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="345" y="473.5" font-size="11" text-anchor="start" fill="#0040a0">RD80</text>
+<text x="302.0" y="501.5" font-size="9" text-anchor="middle" fill="#666">74LS51（7B）</text>
+<path d="M232,479.0 L262,479.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M110,560.0 Q124,579.0 110,598.0 Q138.6,598.0 154,579.0 Q138.6,560.0 110,560.0 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M84,569.5 L115.25,569.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="573.5" font-size="11" text-anchor="end" fill="#0040a0">SEL80</text>
+<path d="M84,588.5 L115.25,588.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="592.5" font-size="11" text-anchor="end" fill="#167a2e">D</text>
+<path d="M154,579.0 L180,579.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M230,550.5 H255.0 A19.0,19.0 0 0 1 255.0,588.5 H230 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M212,560.0 L230,560.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="209" y="564.0" font-size="11" text-anchor="end" fill="#167a2e">W</text>
+<path d="M212,579.0 L230,579.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M274,569.5 L292,569.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="295" y="573.5" font-size="11" text-anchor="start" fill="#0040a0">WR80</text>
+<text x="252.0" y="601.5" font-size="9" text-anchor="middle" fill="#666">74LS51（7B）</text>
+<path d="M180,579.0 L212,579.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M110,650.0 Q124,669.0 110,688.0 Q138.6,688.0 154,669.0 Q138.6,650.0 110,650.0 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M84,659.5 L115.25,659.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="663.5" font-size="11" text-anchor="end" fill="#0040a0">RD80</text>
+<path d="M84,678.5 L115.25,678.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="81" y="682.5" font-size="11" text-anchor="end" fill="#0040a0">RD82</text>
+<path d="M154,669.0 L180,669.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="183" y="673.0" font-size="11" text-anchor="start" fill="#0040a0">DIR（1 = 本体へ）</text>
+<text x="132.0" y="701" font-size="9" text-anchor="middle" fill="#666">74LS08（7A、負論理の OR）</text>
+<text x="30" y="735" font-size="10" text-anchor="start" fill="#333">RD80 は CPU の 80h の読み出しか、DMAE = 1 のときの DMA の読み出し。</text>
+<text x="30" y="751" font-size="10" text-anchor="start" fill="#333">WR80 は 80h の書き込みか DMA の書き込み。</text>
+<rect x="540" y="70" width="520" height="700" rx="8" fill="#fff0f0" stroke="#bbb"/>
+<text x="550" y="90" font-size="14" font-weight="bold" text-anchor="start" fill="#000">2. データの経路（11C、10B、8C / 7C、10C、9C）</text>
+<rect x="660" y="105" width="120" height="70" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="720.0" y="120" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">74LS245</text>
+<text x="720.0" y="188" font-size="9" text-anchor="middle" fill="#666">11C（G = 常に有効、DIR = 上の DIR）</text>
+<text x="720" y="140" font-size="22" text-anchor="middle" fill="#000">⇄</text>
+<text x="720" y="163" font-size="10" text-anchor="middle" fill="#a00000">DB0 = A8 / B8</text>
+<path d="M634,140 L660,140" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="664" y="144" font-size="10" text-anchor="start" fill="#000">A8〜1</text>
+<text x="631" y="144" font-size="11" text-anchor="end" fill="#167a2e">P2 の DB0〜7</text>
+<path d="M780,140 L806,140" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="776" y="144" font-size="10" text-anchor="end" fill="#000">B8〜1</text>
+<text x="809" y="144" font-size="11" text-anchor="start" fill="#0040a0">内部バス IB0〜7</text>
+<rect x="660" y="215" width="130" height="150" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="725.0" y="230" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">OCR 74LS273</text>
+<text x="725.0" y="378" font-size="9" text-anchor="middle" fill="#666">10B（82h の書き込み）</text>
+<path d="M634,245 L660,245" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="664" y="249" font-size="10" text-anchor="start" fill="#000">D7〜0</text>
+<text x="631" y="249" font-size="11" text-anchor="end" fill="#0040a0">IB0〜7</text>
+<path d="M634,280 L652,280" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="656" cy="280" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M660,274 L668,280 L660,286" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="671" y="284" font-size="10" text-anchor="start" fill="#000"></text>
+<text x="631" y="284" font-size="11" text-anchor="end" fill="#0040a0">WR82（↓）</text>
+<path d="M634,315 L660,315" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="664" y="319" font-size="10" text-anchor="start" fill="#000">CLR</text>
+<text x="631" y="319" font-size="11" text-anchor="end" fill="#167a2e">RST</text>
+<path d="M790,240 L816,240" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="786" y="244" font-size="10" text-anchor="end" fill="#000">Q1（bit6）</text>
+<text x="819" y="244" font-size="11" text-anchor="start" fill="#0040a0">RDSW</text>
+<path d="M790,264 L816,264" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="786" y="268" font-size="10" text-anchor="end" fill="#000">Q2（bit5）</text>
+<text x="819" y="268" font-size="11" text-anchor="start" fill="#c2410c">SEL</text>
+<path d="M790,288 L816,288" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="786" y="292" font-size="10" text-anchor="end" fill="#000">Q4（bit3）</text>
+<text x="819" y="292" font-size="11" text-anchor="start" fill="#0040a0">RSTBIT</text>
+<path d="M790,312 L816,312" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="786" y="316" font-size="10" text-anchor="end" fill="#000">Q6（bit1）</text>
+<text x="819" y="316" font-size="11" text-anchor="start" fill="#0040a0">DMAE</text>
+<path d="M790,336 L816,336" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="786" y="340" font-size="10" text-anchor="end" fill="#000">Q7（bit0）</text>
+<text x="819" y="340" font-size="11" text-anchor="start" fill="#0040a0">INTE</text>
+<text x="725" y="395" font-size="10" text-anchor="middle" fill="#333">Q0（bit7、CHEN）、Q3（bit4）、Q5（bit2）は使わない</text>
+<text x="725" y="409" font-size="10" text-anchor="middle" fill="#333">WR82（↓）= 82h の書き込みの終わりで取り込む</text>
+<rect x="680" y="425" width="130" height="85" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="745.0" y="440" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">ISR 74LS257 × 2</text>
+<text x="755" y="523" font-size="9" text-anchor="start" fill="#666">8C、7C（82h の読み出し）</text>
+<path d="M654,455 L680,455" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="684" y="459" font-size="10" text-anchor="start" fill="#000">0</text>
+<text x="651" y="459" font-size="11" text-anchor="end" fill="#0040a0">SW1〜SW8</text>
+<path d="M654,485 L680,485" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="684" y="489" font-size="10" text-anchor="start" fill="#000">1</text>
+<text x="651" y="479" font-size="11" text-anchor="end" fill="#c2410c">REQ ACK BSY MSG</text>
+<text x="651" y="493" font-size="11" text-anchor="end" fill="#c2410c">C/D I/O <tspan fill="#0040a0">1 IRQ</tspan></text>
+<path d="M810,470 L836,470" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="806" y="474" font-size="10" text-anchor="end" fill="#000">Y</text>
+<text x="839" y="474" font-size="11" text-anchor="start" fill="#0040a0">IB0〜7（OE = RD82）</text>
+<path d="M745,510 L745,532" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="745" y="505" font-size="10" text-anchor="middle" fill="#000">S</text>
+<text x="745" y="545" font-size="11" text-anchor="middle" fill="#0040a0">RDSW</text>
+<text x="830" y="495" font-size="10" text-anchor="start" fill="#333">入力は左から bit7〜0。1 は +5 V。</text>
+<text x="830" y="509" font-size="10" text-anchor="start" fill="#333">RDSW = 0 で SW1、= 1 で SASI の状態を読む</text>
+<rect x="620" y="560" width="130" height="70" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="685.0" y="575" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">ODR 74LS373</text>
+<text x="685.0" y="643" font-size="9" text-anchor="middle" fill="#666">10C（80h の書き込み）</text>
+<path d="M594,585 L620,585" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="624" y="589" font-size="10" text-anchor="start" fill="#000">D7〜0</text>
+<text x="591" y="589" font-size="11" text-anchor="end" fill="#0040a0">IB0〜7</text>
+<path d="M594,612 L620,612" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="624" y="616" font-size="10" text-anchor="start" fill="#000">LE</text>
+<text x="591" y="616" font-size="11" text-anchor="end" fill="#0040a0">WR80</text>
+<path d="M750,598 L776,598" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="746" y="602" font-size="10" text-anchor="end" fill="#000">Q7〜0</text>
+<text x="779" y="602" font-size="11" text-anchor="start" fill="#8a2be2">ODR0〜7</text>
+<rect x="860" y="610" width="130" height="70" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="925.0" y="625" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">IDR 74LS373</text>
+<text x="950" y="693" font-size="9" text-anchor="start" fill="#666">9C（80h の読み出し）</text>
+<path d="M834,635 L860,635" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="864" y="639" font-size="10" text-anchor="start" fill="#000">D7〜0</text>
+<text x="831" y="639" font-size="11" text-anchor="end" fill="#8a2be2">DTIN0〜7</text>
+<path d="M834,662 L860,662" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="864" y="666" font-size="10" text-anchor="start" fill="#000">LE</text>
+<text x="831" y="666" font-size="11" text-anchor="end" fill="#0040a0">IDR_LE</text>
+<path d="M990,635 L1016,635" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="986" y="639" font-size="10" text-anchor="end" fill="#000">Q7〜0</text>
+<text x="1019" y="639" font-size="11" text-anchor="start" fill="#0040a0">IB0〜7</text>
+<path d="M925,680 L925,692" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="925" y="675" font-size="10" text-anchor="middle" fill="#000">OE</text>
+<text x="925" y="705" font-size="11" text-anchor="middle" fill="#0040a0">RD80</text>
+<path d="M640,680.0 H657.0 A27.0,27.0 0 0 1 657.0,734.0 H640 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M614,689.0 L640,689.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="611" y="693.0" font-size="11" text-anchor="end" fill="#c2410c">REQ</text>
+<path d="M614,707.0 L640,707.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="611" y="711.0" font-size="11" text-anchor="end" fill="#c2410c">I/O</text>
+<circle cx="636" cy="725.0" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M614,725.0 L632,725.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="611" y="729.0" font-size="11" text-anchor="end" fill="#c2410c">ACK</text>
+<path d="M684,707.0 L710,707.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="713" y="711.0" font-size="11" text-anchor="start" fill="#0040a0">IDR_LE</text>
+<text x="662.0" y="747" font-size="9" text-anchor="middle" fill="#666">74LS02（5A）</text>
+<text x="770" y="730" font-size="10" text-anchor="start" fill="#a00000">ビットの並び: IC のピン名の番号は DB と逆。</text>
+<text x="770" y="743" font-size="10" text-anchor="start" fill="#333">DBn は A(8−n) / B(8−n)、D(7−n)、Q(7−n) に入る。</text>
+<text x="770" y="756" font-size="10" text-anchor="start" fill="#333">信号としては DBn = IBn = ODRn = DTINn = DTn で、</text>
+<text x="770" y="769" font-size="10" text-anchor="start" fill="#333">ボードのどこでもビットは入れ替わらない。</text>
+<rect x="1070" y="70" width="820" height="700" rx="8" fill="#fffbe6" stroke="#bbb"/>
+<text x="1080" y="90" font-size="14" font-weight="bold" text-anchor="start" fill="#000">3. ハンドシェイク、割り込み、DMA（4B、5B、4A、175、8A、4C、5A）</text>
+<path d="M1130,110.0 H1147.0 A27.0,27.0 0 0 1 1147.0,164.0 H1130 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M1104,119.0 L1130,119.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1101" y="123.0" font-size="11" text-anchor="end" fill="#c2410c">REQ</text>
+<circle cx="1126" cy="137.0" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1104,137.0 L1122,137.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1101" y="141.0" font-size="11" text-anchor="end" fill="#c2410c">MSG</text>
+<circle cx="1126" cy="155.0" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1104,155.0 L1122,155.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1101" y="159.0" font-size="11" text-anchor="end" fill="#c2410c">C/D</text>
+<path d="M1174,137.0 L1200,137.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1203" y="141.0" font-size="11" text-anchor="start" fill="#0040a0">DATA_REQ</text>
+<text x="1152.0" y="177" font-size="9" text-anchor="middle" fill="#666">74LS139（5B）の 2Y0</text>
+<path d="M1130,185.0 H1147.0 A27.0,27.0 0 0 1 1147.0,239.0 H1130 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M1104,194.0 L1130,194.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1101" y="198.0" font-size="11" text-anchor="end" fill="#c2410c">REQ</text>
+<circle cx="1126" cy="212.0" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1104,212.0 L1122,212.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1101" y="216.0" font-size="11" text-anchor="end" fill="#c2410c">MSG</text>
+<path d="M1104,230.0 L1130,230.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1101" y="234.0" font-size="11" text-anchor="end" fill="#c2410c">C/D</text>
+<path d="M1174,212.0 L1200,212.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1203" y="216.0" font-size="11" text-anchor="start" fill="#0040a0">CMDSTS_REQ</text>
+<text x="1152.0" y="252" font-size="9" text-anchor="middle" fill="#666">74LS139 の 2Y2</text>
+<path d="M1130,270.0 Q1144,297.0 1130,324.0 Q1158.6,324.0 1174,297.0 Q1158.6,270.0 1130,270.0 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M1118,279.0 L1133.888888888889,279.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1115" y="283.0" font-size="11" text-anchor="end" fill="#167a2e">D</text>
+<path d="M1118,297.0 L1137.0,297.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1115" y="301.0" font-size="11" text-anchor="end" fill="#0040a0">RD80</text>
+<path d="M1118,315.0 L1133.888888888889,315.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1115" y="319.0" font-size="11" text-anchor="end" fill="#0040a0">WR80</text>
+<circle cx="1178" cy="297.0" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1182,297.0 L1194,297.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1194,297.0 L1225,297.0 L1225,348 L1290,348" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1290" y="300" width="70" height="64" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1325.0" y="315" font-size="12" font-weight="bold" text-anchor="middle" fill="#000"></text>
+<text x="1335.0" y="377" font-size="9" text-anchor="start" fill="#666">74LS74（4B）の 1 番目</text>
+<text x="1325.0" y="336.0" font-size="10" text-anchor="middle" fill="#666">D-FF</text>
+<path d="M1264,318 L1290,318" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1294" y="322" font-size="10" text-anchor="start" fill="#000">D</text>
+<text x="1261" y="322" font-size="11" text-anchor="end" fill="#c2410c">REQ</text>
+<path d="M1264,348 L1290,348" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1290,342 L1298,348 L1290,354" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1301" y="352" font-size="10" text-anchor="start" fill="#000"></text>
+<path d="M1360,318 L1386,318" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1356" y="322" font-size="10" text-anchor="end" fill="#000">Q</text>
+<text x="1389" y="322" font-size="11" text-anchor="start" fill="#c2410c">ACK</text>
+<path d="M1325.0,372 L1325.0,386" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1325.0" cy="368" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="1325.0" y="359" font-size="10" text-anchor="middle" fill="#000">CLR</text>
+<text x="1325.0" y="399" font-size="11" text-anchor="middle" fill="#c2410c">REQ（REQ が落ちると 0）</text>
+<text x="1290" y="292" font-size="13" font-weight="bold" text-anchor="start" fill="#000">ACK</text>
+<text x="1130" y="422" font-size="10" text-anchor="start" fill="#333">80h の読み書きか DMA の 1 サイクルの終わりで、REQ があれば ACK = 1</text>
+<path d="M1160,509.0 H1185.0 A19.0,19.0 0 0 1 1185.0,547.0 H1160 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="1156" cy="518.5" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1136,518.5 L1152,518.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1133" y="522.5" font-size="11" text-anchor="end" fill="#0040a0">DMAE</text>
+<path d="M1136,537.5 L1160,537.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1133" y="541.5" font-size="11" text-anchor="end" fill="#0040a0">DATA_REQ</text>
+<path d="M1204,528.0 L1228,528.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1228,528.0 L1290,528.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1160,439.0 H1185.0 A19.0,19.0 0 0 1 1185.0,477.0 H1160 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M1136,448.5 L1160,448.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1133" y="452.5" font-size="11" text-anchor="end" fill="#c2410c">I/O</text>
+<path d="M1136,467.5 L1160,467.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1133" y="471.5" font-size="11" text-anchor="end" fill="#0040a0">CMDSTS_REQ</text>
+<path d="M1204,458.0 L1228,458.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1182.0" y="490" font-size="9" text-anchor="middle" fill="#666">74LS32（4C）ほか</text>
+<path d="M1228,458.0 L1325,458.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1290" y="480" width="70" height="64" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1325.0" y="495" font-size="12" font-weight="bold" text-anchor="middle" fill="#000"></text>
+<text x="1335.0" y="557" font-size="9" text-anchor="start" fill="#666">74LS74（4B）の 2 番目</text>
+<text x="1325.0" y="516.0" font-size="10" text-anchor="middle" fill="#666">D-FF</text>
+<path d="M1264,498 L1290,498" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1294" y="502" font-size="10" text-anchor="start" fill="#000">D</text>
+<text x="1261" y="502" font-size="11" text-anchor="end" fill="#0040a0">INTE</text>
+<path d="M1264,528 L1290,528" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1290,522 L1298,528 L1290,534" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1301" y="532" font-size="10" text-anchor="start" fill="#000"></text>
+<text x="1356" y="502" font-size="10" text-anchor="end" fill="#000">Q</text>
+<path d="M1360,498 L1386,498" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1325.0,458 L1325.0,480" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1325.0" y="493" font-size="10" text-anchor="middle" fill="#000">PR</text>
+<path d="M1325.0,552 L1325.0,566" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1325.0" cy="548" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="1325.0" y="539" font-size="10" text-anchor="middle" fill="#000">CLR</text>
+<text x="1325.0" y="579" font-size="11" text-anchor="middle" fill="#0040a0">INTE</text>
+<text x="1385" y="470" font-size="12" font-weight="bold" text-anchor="start" fill="#000">IRQ（PR = ステータスの REQ）</text>
+<path d="M1386,498 L1416,498" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1392" y="492" font-size="11" text-anchor="start" fill="#0040a0">IRQ</text>
+<path d="M1440,486 L1466,498 L1440,510 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1449" y="502" font-size="9" text-anchor="middle" fill="#000">◇</text>
+<path d="M1416,498 L1440,498" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1466,498 L1490,498" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1493" y="502" font-size="11" text-anchor="start" fill="#167a2e">IR9（P2-37）</text>
+<text x="1453" y="522" font-size="9" text-anchor="middle" fill="#666">7438（8A）</text>
+<rect x="1600" y="120" width="70" height="64" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1635.0" y="135" font-size="12" font-weight="bold" text-anchor="middle" fill="#000"></text>
+<text x="1645.0" y="197" font-size="9" text-anchor="start" fill="#666">74LS74（4A）の 2 番目</text>
+<text x="1635.0" y="156.0" font-size="10" text-anchor="middle" fill="#666">D-FF</text>
+<path d="M1574,138 L1600,138" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1604" y="142" font-size="10" text-anchor="start" fill="#000">D</text>
+<text x="1571" y="142" font-size="11" text-anchor="end" fill="#0040a0">DB1（DMAE）</text>
+<path d="M1574,168 L1592,168" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1596" cy="168" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1600,162 L1608,168 L1600,174" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1611" y="172" font-size="10" text-anchor="start" fill="#000"></text>
+<text x="1571" y="172" font-size="11" text-anchor="end" fill="#0040a0">WR82（↓）</text>
+<path d="M1670,138 L1696,138" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1666" y="142" font-size="10" text-anchor="end" fill="#000">Q</text>
+<text x="1699" y="142" font-size="11" text-anchor="start" fill="#0040a0">ARM</text>
+<path d="M1635.0,184 L1635.0,206" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1635.0" y="179" font-size="10" text-anchor="middle" fill="#000">CLR</text>
+<text x="1635.0" y="219" font-size="11" text-anchor="middle" fill="#167a2e">RST + D・E</text>
+<text x="1600" y="105" font-size="13" font-weight="bold" text-anchor="start" fill="#000">ARM</text>
+<rect x="1600" y="260" width="70" height="64" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1635.0" y="275" font-size="12" font-weight="bold" text-anchor="middle" fill="#000"></text>
+<text x="1645.0" y="337" font-size="9" text-anchor="start" fill="#666">74LS74（4A）の 1 番目</text>
+<text x="1635.0" y="296.0" font-size="10" text-anchor="middle" fill="#666">D-FF</text>
+<path d="M1574,278 L1600,278" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1604" y="282" font-size="10" text-anchor="start" fill="#000">D</text>
+<text x="1571" y="282" font-size="11" text-anchor="end" fill="#0040a0">ARM</text>
+<path d="M1574,308 L1600,308" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1600,302 L1608,308 L1600,314" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1611" y="312" font-size="10" text-anchor="start" fill="#000"></text>
+<text x="1571" y="312" font-size="11" text-anchor="end" fill="#0040a0">DATA_REQ</text>
+<path d="M1670,278 L1696,278" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1666" y="282" font-size="10" text-anchor="end" fill="#000">Q</text>
+<text x="1699" y="282" font-size="11" text-anchor="start" fill="#0040a0">PEND</text>
+<path d="M1635.0,324 L1635.0,346" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1635.0" y="319" font-size="10" text-anchor="middle" fill="#000">CLR</text>
+<text x="1635.0" y="359" font-size="11" text-anchor="middle" fill="#167a2e">RST + D</text>
+<text x="1600" y="245" font-size="13" font-weight="bold" text-anchor="start" fill="#000">PEND</text>
+<rect x="1600" y="400" width="70" height="64" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1635.0" y="415" font-size="12" font-weight="bold" text-anchor="middle" fill="#000"></text>
+<text x="1645.0" y="477" font-size="9" text-anchor="start" fill="#666">74LS175（10A）</text>
+<text x="1635.0" y="436.0" font-size="10" text-anchor="middle" fill="#666">同期</text>
+<path d="M1574,418 L1600,418" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1604" y="422" font-size="10" text-anchor="start" fill="#000">D</text>
+<text x="1571" y="422" font-size="11" text-anchor="end" fill="#0040a0">PEND</text>
+<path d="M1574,448 L1600,448" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1600,442 L1608,448 L1600,454" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1611" y="452" font-size="10" text-anchor="start" fill="#000"></text>
+<text x="1571" y="452" font-size="11" text-anchor="end" fill="#167a2e">SCLK</text>
+<path d="M1670,418 L1696,418" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1666" y="422" font-size="10" text-anchor="end" fill="#000">Q</text>
+<text x="1699" y="422" font-size="11" text-anchor="start" fill="#0040a0">PEND_S</text>
+<path d="M1600,560.0 H1625.0 A19.0,19.0 0 0 1 1625.0,598.0 H1600 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M1576,569.5 L1600,569.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1573" y="573.5" font-size="11" text-anchor="end" fill="#0040a0">PEND_S</text>
+<circle cx="1596" cy="588.5" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1576,588.5 L1592,588.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1573" y="592.5" font-size="11" text-anchor="end" fill="#167a2e">RST + D</text>
+<path d="M1644,579.0 L1668,579.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1692,567.0 L1718,579.0 L1692,591.0 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="1722" cy="579.0" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="1701" y="583.0" font-size="9" text-anchor="middle" fill="#000">◇</text>
+<path d="M1668,579.0 L1692,579.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1726,579.0 L1750,579.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1753" y="583.0" font-size="11" text-anchor="start" fill="#167a2e">DRQ0（P2-15）</text>
+<text x="1705" y="603.0" font-size="9" text-anchor="middle" fill="#666">7438（8A）</text>
+<text x="1090" y="690" font-size="10" text-anchor="start" fill="#333">割り込みはステータスフェーズの REQ で立ち、INTE を 0 にするまで消えない。DMAE = 0 ならデータフェーズの REQ でも立つ。</text>
+<text x="1090" y="708" font-size="10" text-anchor="start" fill="#333">82h に DMAE = 1 → ARM。データの REQ ごとに PEND → DRQ0。DACK0 で 1 バイト受け渡すと PEND が消える。EOP#（最後）で ARM も消える。</text>
+<text x="1090" y="726" font-size="10" text-anchor="start" fill="#333">IR9 と DRQ0 は 7B1（約 620 Ω で +5 V、1.5 kΩ で GND の分圧）で離したとき約 3.5 V に引かれる。</text>
+<rect x="10" y="780" width="1880" height="480" rx="8" fill="#f3f3f3" stroke="#bbb"/>
+<text x="20" y="800" font-size="14" font-weight="bold" text-anchor="start" fill="#000">4. SASI 側（P1、終端 220 Ω / 330 Ω は 1A1、1A2、1B1）</text>
+<text x="40" y="815" font-size="12" font-weight="bold" text-anchor="start" fill="#000">受信（74LS240 2C、3B）</text>
+<path d="M140,833 L166,845 L140,857 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="170" cy="845" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M116,845 L140,845" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M174,845 L198,845" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="113" y="849" font-size="11" text-anchor="end" fill="#c2410c">P1-48 REQ#</text>
+<text x="201" y="849" font-size="11" text-anchor="start" fill="#c2410c">REQ</text>
+<path d="M140,873 L166,885 L140,897 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="170" cy="885" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M116,885 L140,885" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M174,885 L198,885" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="113" y="889" font-size="11" text-anchor="end" fill="#c2410c">P1-36 BSY#</text>
+<text x="201" y="889" font-size="11" text-anchor="start" fill="#c2410c">BSY</text>
+<path d="M140,913 L166,925 L140,937 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="170" cy="925" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M116,925 L140,925" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M174,925 L198,925" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="113" y="929" font-size="11" text-anchor="end" fill="#c2410c">P1-42 MSG#</text>
+<text x="201" y="929" font-size="11" text-anchor="start" fill="#c2410c">MSG</text>
+<path d="M140,953 L166,965 L140,977 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="170" cy="965" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M116,965 L140,965" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M174,965 L198,965" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="113" y="969" font-size="11" text-anchor="end" fill="#c2410c">P1-46 C#/D</text>
+<text x="201" y="969" font-size="11" text-anchor="start" fill="#c2410c">C/D</text>
+<path d="M140,993 L166,1005 L140,1017 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="170" cy="1005" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M116,1005 L140,1005" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M174,1005 L198,1005" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="113" y="1009" font-size="11" text-anchor="end" fill="#c2410c">P1-50 I#/O</text>
+<text x="201" y="1009" font-size="11" text-anchor="start" fill="#c2410c">I/O</text>
+<path d="M140,1033 L166,1045 L140,1057 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="170" cy="1045" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M116,1045 L140,1045" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M174,1045 L198,1045" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="113" y="1049" font-size="11" text-anchor="end" fill="#c2410c">P1-38 ACK#</text>
+<text x="201" y="1049" font-size="11" text-anchor="start" fill="#c2410c">ACK（読み返し）</text>
+<path d="M140,1083 L166,1095 L140,1107 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="170" cy="1095" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M116,1095 L140,1095" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M174,1095 L198,1095" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="113" y="1099" font-size="11" text-anchor="end" fill="#8a2be2">P1-2〜16 DT0#〜7#</text>
+<text x="201" y="1099" font-size="11" text-anchor="start" fill="#8a2be2">DTIN0〜7</text>
+<path d="M153,1089 L153,1065" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="153" cy="1085" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M153,1081 L153,1065" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="156" y="1065" font-size="11" text-anchor="start" fill="#0040a0">DRIVE（出力中は止める）</text>
+<text x="153" y="1119" font-size="9" text-anchor="middle" fill="#666">74LS240（3B）× 8</text>
+<path d="M120,1101 L128,1089" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="126" y="1087" font-size="9" text-anchor="middle" fill="#000">8</text>
+<path d="M182,1101 L190,1089" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="188" y="1087" font-size="9" text-anchor="middle" fill="#000">8</text>
+<text x="40" y="1150" font-size="10" text-anchor="start" fill="#333">バス上は L で有効なので、受信のインバータを通すと正論理になる。</text>
+<text x="40" y="1166" font-size="10" text-anchor="start" fill="#333">DTIN0〜7 = SASI のデータ線を受信したもの（IDR の入力）。ODR0〜7 = 80h に書いた値（7438 の入力）。</text>
+<path d="M560,830.0 Q574,849.0 560,868.0 Q588.6,868.0 604,849.0 Q588.6,830.0 560,830.0 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M534,839.5 L565.25,839.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="531" y="843.5" font-size="11" text-anchor="end" fill="#c2410c">SEL</text>
+<circle cx="561.25" cy="858.5" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M534,858.5 L557.25,858.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="531" y="862.5" font-size="11" text-anchor="end" fill="#c2410c">I/O</text>
+<path d="M604,849.0 L630,849.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="633" y="853.0" font-size="11" text-anchor="start" fill="#0040a0">DRIVE</text>
+<text x="582.0" y="881" font-size="9" text-anchor="middle" fill="#666">74LS02（6A）+ 7404（8B）</text>
+<text x="560" y="905" font-size="10" text-anchor="start" fill="#333">選択のときと、データの向きがホスト → ターゲットのとき、データ線を駆動する</text>
+<path d="M620,978 L646,990 L620,1002 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="650" cy="990" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="629" y="994" font-size="9" text-anchor="middle" fill="#000">◇</text>
+<path d="M580,990 L620,990" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M654,990 L694,990" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="577" y="994" font-size="11" text-anchor="end" fill="#8a2be2">ODR0〜7</text>
+<text x="697" y="994" font-size="11" text-anchor="start" fill="#8a2be2">P1-2〜16 DT0#〜DT7#</text>
+<path d="M633,984 L633,968" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="636" y="968" font-size="11" text-anchor="start" fill="#0040a0">DRIVE（8 本共通）</text>
+<text x="633" y="1014" font-size="9" text-anchor="middle" fill="#666">7438（2A、2B）× 8</text>
+<path d="M592,996 L600,984" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="598" y="982" font-size="9" text-anchor="middle" fill="#000">8</text>
+<path d="M676,996 L684,984" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="682" y="982" font-size="9" text-anchor="middle" fill="#000">8</text>
+<text x="560" y="1050" font-size="10" text-anchor="start" fill="#333">斜線の 8 は 8 本の束。1 ビットに 1 つずつ、同じゲートが 8 つある（7438 の 2 個分）。</text>
+<text x="560" y="1066" font-size="10" text-anchor="start" fill="#333">10C の Q(7−n) → DTn。ODRn がそのまま DTn に出る（逆なのは IC のピン名だけ）。</text>
+<text x="980" y="815" font-size="12" font-weight="bold" text-anchor="start" fill="#000">制御の出力（7438 5C）</text>
+<path d="M1060,838 L1086,850 L1060,862 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="1090" cy="850" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="1069" y="854" font-size="9" text-anchor="middle" fill="#000">◇</text>
+<path d="M1036,850 L1060,850" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1094,850 L1118,850" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1033" y="854" font-size="11" text-anchor="end" fill="#c2410c">SEL</text>
+<text x="1121" y="854" font-size="11" text-anchor="start" fill="#c2410c">P1-44 SEL#</text>
+<path d="M1060,883 L1086,895 L1060,907 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="1090" cy="895" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="1069" y="899" font-size="9" text-anchor="middle" fill="#000">◇</text>
+<path d="M1036,895 L1060,895" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1094,895 L1118,895" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1033" y="899" font-size="11" text-anchor="end" fill="#c2410c">ACK</text>
+<text x="1121" y="899" font-size="11" text-anchor="start" fill="#c2410c">P1-38 ACK#</text>
+<path d="M1060,928 L1086,940 L1060,952 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="1090" cy="940" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="1069" y="944" font-size="9" text-anchor="middle" fill="#000">◇</text>
+<path d="M1036,940 L1060,940" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1094,940 L1118,940" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1033" y="944" font-size="11" text-anchor="end" fill="#c2410c">RSTOUT</text>
+<text x="1121" y="944" font-size="11" text-anchor="start" fill="#c2410c">P1-40 RST#</text>
+<text x="980" y="985" font-size="10" text-anchor="start" fill="#333">BSY は出さない（ホストは BSY を駆動しない）</text>
+<text x="980" y="1030" font-size="12" font-weight="bold" text-anchor="start" fill="#000">SASI の RST のパルス（74LS175 10A の 3 段 + 74LS74 9A の 2 段、SCLK の ↑ ごとに 1 段）</text>
+<rect x="1050" y="1050" width="60" height="40" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1080" y="1075" font-size="11" text-anchor="middle" fill="#000">Q2</text>
+<path d="M1110,1070 L1145,1070" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1145" y="1050" width="60" height="40" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1175" y="1075" font-size="11" text-anchor="middle" fill="#000">Q3</text>
+<path d="M1205,1070 L1240,1070" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1240" y="1050" width="60" height="40" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1270" y="1075" font-size="11" text-anchor="middle" fill="#000">Q4</text>
+<path d="M1300,1070 L1335,1070" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1335" y="1050" width="60" height="40" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1365" y="1075" font-size="11" text-anchor="middle" fill="#000">Q5</text>
+<path d="M1395,1070 L1430,1070" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1430" y="1050" width="60" height="40" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1460" y="1075" font-size="11" text-anchor="middle" fill="#000">Q6</text>
+<path d="M1020,1070 L1050,1070" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1017" y="1074" font-size="11" text-anchor="end" fill="#0040a0">RSTBIT</text>
+<text x="1270" y="1110" font-size="10" text-anchor="middle" fill="#333">SCLK で 1 段ずつ送る</text>
+<path d="M1560,1130.0 H1585.0 A19.0,19.0 0 0 1 1585.0,1168.0 H1560 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="1556" cy="1139.5" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1534,1139.5 L1552,1139.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1531" y="1143.5" font-size="11" text-anchor="end" fill="#0040a0">Q2</text>
+<path d="M1534,1158.5 L1560,1158.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1531" y="1162.5" font-size="11" text-anchor="end" fill="#0040a0">Q6</text>
+<path d="M1604,1149.0 L1630,1149.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1633" y="1153.0" font-size="11" text-anchor="start" fill="#c2410c">RSTOUT</text>
+<text x="1582.0" y="1181" font-size="9" text-anchor="middle" fill="#666">74LS08（7A）</text>
+<text x="980" y="1200" font-size="10" text-anchor="start" fill="#333">RSTBIT を 1 → 0 にすると、Q2 が先に 0 になり Q6 が 0 になるまでの SCLK 4 クロック（約 400 ns）だけ RSTOUT = 1。</text>
+<text x="980" y="1218" font-size="10" text-anchor="start" fill="#a00000">SASI の規格（Rev. E）の RESET HOLD TIME（25 μs 以上）よりずっと短い。</text>
+<text x="1500" y="815" font-size="12" font-weight="bold" text-anchor="start" fill="#000">SW1（Grayhill、8 回路）</text>
+<text x="1500" y="835" font-size="10" text-anchor="start" fill="#333">閉 = 0。10 kΩ（6B1）で +5 V に引く。</text>
+<text x="1500" y="851" font-size="10" text-anchor="start" fill="#333">bit7 / bit6 = 1 台目 / 2 台目のセクタ長、</text>
+<text x="1500" y="867" font-size="10" text-anchor="start" fill="#333">bit5〜3 / bit2〜0 = 1 台目 / 2 台目の容量コード</text>
+<text x="1500" y="900" font-size="10" text-anchor="start" fill="#a00000">P1 の 20、22、30、32 番は +5 V 直結（SCSI のピン配置の相手は危ない）</text>
+</g>
+</svg>

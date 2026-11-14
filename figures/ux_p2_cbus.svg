@@ -1,0 +1,776 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="1300" viewBox="0 0 1560 1300" font-family="sans-serif">
+<rect width="1560" height="1300" fill="#ffffff"/>
+<text x="30" y="30" font-size="20" font-weight="bold">PC-9801UX: C-bus スロットと SASI コネクタ（P2）の導通チェック用見取り図（下に RA2 などのハードディスク専用スロットの SASI の側）</text>
+<text x="30" y="52" font-size="13">C-bus は 80286 型（テクニカルデータブック HARDWARE 編 1993、第 3 部 第 1 章、276〜277 ページ）。カードの挿入面から見て上の列が B、下の列が A。</text>
+<text x="30" y="70" font-size="13">赤枠 = 導通を確かめた組（2026-10-25）。P2-17 は C-bus ではなく 8237 の EOP#（36 番ピン）に直結。枠の下の赤字が相手のピン。青の破線の枠と青字 = Project MPS の資料による専用スロットの対応（s = 専用スロットのピン）。</text>
+<text x="30" y="92" font-size="15" font-weight="bold">C-bus スロット（左上 B01、右下 A50）</text>
+<rect x="30" y="100" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="43.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B01</text>
+<text x="47.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 47.5 164.0)">GND</text>
+<rect x="60" y="100" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="73.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B02</text>
+<text x="77.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 77.5 164.0)">V1</text>
+<rect x="90" y="100" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="103.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B03</text>
+<text x="107.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 107.5 164.0)">V2</text>
+<rect x="120" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="133.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B04</text>
+<text x="137.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 137.5 164.0)">DB001</text>
+<text x="133.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">22</text>
+<text x="133.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s14</text>
+<rect x="150" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="163.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B05</text>
+<text x="167.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 167.5 164.0)">DB011</text>
+<text x="163.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">23</text>
+<text x="163.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s39</text>
+<rect x="180" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="193.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B06</text>
+<text x="197.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 197.5 164.0)">DB021</text>
+<text x="193.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">24</text>
+<text x="193.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s15</text>
+<rect x="210" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="223.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B07</text>
+<text x="227.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 227.5 164.0)">DB031</text>
+<text x="223.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">25</text>
+<text x="223.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s40</text>
+<rect x="240" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="253.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B08</text>
+<text x="257.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 257.5 164.0)">DB041</text>
+<text x="253.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">26</text>
+<text x="253.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s16</text>
+<rect x="270" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="283.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B09</text>
+<text x="287.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 287.5 164.0)">DB051</text>
+<text x="283.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">27</text>
+<text x="283.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s41</text>
+<rect x="300" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="313.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B10</text>
+<text x="317.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 317.5 164.0)">DB061</text>
+<text x="313.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">28</text>
+<text x="313.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s18</text>
+<rect x="330" y="100" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="343.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B11</text>
+<text x="347.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 347.5 164.0)">GND</text>
+<rect x="360" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="373.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B12</text>
+<text x="377.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 377.5 164.0)">DB071</text>
+<text x="373.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">29</text>
+<text x="373.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s43</text>
+<rect x="390" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#444" stroke-width="1"/>
+<text x="403.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B13</text>
+<text x="407.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 407.5 164.0)">DB081</text>
+<rect x="420" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#444" stroke-width="1"/>
+<text x="433.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B14</text>
+<text x="437.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 437.5 164.0)">DB091</text>
+<rect x="450" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#444" stroke-width="1"/>
+<text x="463.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B15</text>
+<text x="467.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 467.5 164.0)">DB101</text>
+<rect x="480" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#444" stroke-width="1"/>
+<text x="493.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B16</text>
+<text x="497.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 497.5 164.0)">DB111</text>
+<rect x="510" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#444" stroke-width="1"/>
+<text x="523.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B17</text>
+<text x="527.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 527.5 164.0)">DB121</text>
+<rect x="540" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#444" stroke-width="1"/>
+<text x="553.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B18</text>
+<text x="557.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 557.5 164.0)">DB131</text>
+<rect x="570" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#444" stroke-width="1"/>
+<text x="583.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B19</text>
+<text x="587.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 587.5 164.0)">DB141</text>
+<rect x="600" y="100" width="27" height="120" rx="3" fill="#9fdfa8" stroke="#444" stroke-width="1"/>
+<text x="613.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B20</text>
+<text x="617.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 617.5 164.0)">DB151</text>
+<rect x="630" y="100" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="643.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B21</text>
+<text x="647.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 647.5 164.0)">GND</text>
+<rect x="660" y="100" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="673.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B22</text>
+<text x="677.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 677.5 164.0)">+12V</text>
+<rect x="690" y="100" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="703.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B23</text>
+<text x="707.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 707.5 164.0)">+12V</text>
+<rect x="720" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="733.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B24</text>
+<text x="737.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 737.5 164.0)">IR31</text>
+<rect x="750" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="763.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B25</text>
+<text x="767.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 767.5 164.0)">IR51</text>
+<rect x="780" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="793.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B26</text>
+<text x="797.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 797.5 164.0)">IR61</text>
+<rect x="810" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#c00000" stroke-width="3"/>
+<text x="823.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B27</text>
+<text x="827.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 827.5 164.0)">IR91</text>
+<text x="823.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">37</text>
+<text x="823.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s12</text>
+<rect x="840" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="853.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B28</text>
+<text x="857.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 857.5 164.0)">IR101</text>
+<rect x="870" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="883.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B29</text>
+<text x="887.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 887.5 164.0)">IR121</text>
+<rect x="900" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="913.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B30</text>
+<text x="917.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 917.5 164.0)">IR131</text>
+<rect x="930" y="100" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="943.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B31</text>
+<text x="947.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 947.5 164.0)">GND</text>
+<rect x="960" y="100" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="973.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B32</text>
+<text x="977.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 977.5 164.0)">-12V</text>
+<rect x="990" y="100" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="1003.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B33</text>
+<text x="1007.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1007.5 164.0)">-12V</text>
+<rect x="1020" y="100" width="27" height="120" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="1033.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B34</text>
+<text x="1037.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1037.5 164.0)">RESET0</text>
+<text x="1033.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">35</text>
+<text x="1033.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s23</text>
+<rect x="1050" y="100" width="27" height="120" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="1063.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B35</text>
+<text x="1067.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1067.5 164.0)">DACK00</text>
+<text x="1063.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">16</text>
+<text x="1063.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s36</text>
+<rect x="1080" y="100" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1093.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B36</text>
+<text x="1097.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1097.5 164.0)">DACK30</text>
+<rect x="1110" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#c00000" stroke-width="3"/>
+<text x="1123.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B37</text>
+<text x="1127.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1127.5 164.0)">DRQ00</text>
+<text x="1123.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">15</text>
+<text x="1123.5" y="202" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s11</text>
+<rect x="1140" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="1153.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B38</text>
+<text x="1157.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1157.5 164.0)">DRQ30</text>
+<rect x="1170" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="1183.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B39</text>
+<text x="1187.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1187.5 164.0)">WORD0</text>
+<rect x="1200" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="1213.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B40</text>
+<text x="1217.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1217.5 164.0)">EXHRQ10</text>
+<rect x="1230" y="100" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="1243.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B41</text>
+<text x="1247.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1247.5 164.0)">GND</text>
+<rect x="1260" y="100" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1273.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B42</text>
+<text x="1277.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1277.5 164.0)">EXHLA10</text>
+<rect x="1290" y="100" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1303.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B43</text>
+<text x="1307.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1307.5 164.0)">DMATC0</text>
+<text x="1303.5" y="214" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s10</text>
+<rect x="1320" y="100" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1333.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B44</text>
+<text x="1337.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1337.5 164.0)">NMI0</text>
+<rect x="1350" y="100" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1363.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B45</text>
+<text x="1367.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1367.5 164.0)">MWE0</text>
+<rect x="1380" y="100" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1393.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B46</text>
+<text x="1397.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1397.5 164.0)">EXHLA20</text>
+<rect x="1410" y="100" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="1423.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B47</text>
+<text x="1427.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1427.5 164.0)">EXHRQ20</text>
+<rect x="1440" y="100" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1453.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B48</text>
+<text x="1457.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1457.5 164.0)">SBUSRQ1</text>
+<rect x="1470" y="100" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="1483.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B49</text>
+<text x="1487.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1487.5 164.0)">+5V</text>
+<rect x="1500" y="100" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="1513.5" y="115" font-size="10" font-weight="bold" text-anchor="middle">B50</text>
+<text x="1517.5" y="164.0" font-size="10" text-anchor="middle" transform="rotate(-90 1517.5 164.0)">+5V</text>
+<rect x="30" y="226" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="43.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A01</text>
+<text x="47.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 47.5 290.0)">GND</text>
+<rect x="60" y="226" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="73.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A02</text>
+<text x="77.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 77.5 290.0)">V1</text>
+<rect x="90" y="226" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="103.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A03</text>
+<text x="107.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 107.5 290.0)">V2</text>
+<rect x="120" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="133.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A04</text>
+<text x="137.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 137.5 290.0)">AB001</text>
+<text x="133.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">2</text>
+<text x="133.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s2</text>
+<rect x="150" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="163.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A05</text>
+<text x="167.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 167.5 290.0)">AB011</text>
+<text x="163.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">3</text>
+<text x="163.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s27</text>
+<rect x="180" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="193.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A06</text>
+<text x="197.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 197.5 290.0)">AB021</text>
+<text x="193.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">4</text>
+<text x="193.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s3</text>
+<rect x="210" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="223.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A07</text>
+<text x="227.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 227.5 290.0)">AB031</text>
+<text x="223.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">5</text>
+<text x="223.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s28</text>
+<rect x="240" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="253.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A08</text>
+<text x="257.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 257.5 290.0)">AB041</text>
+<text x="253.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">6</text>
+<text x="253.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s4</text>
+<rect x="270" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="283.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A09</text>
+<text x="287.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 287.5 290.0)">AB051</text>
+<text x="283.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">7</text>
+<text x="283.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s29</text>
+<rect x="300" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="313.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A10</text>
+<text x="317.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 317.5 290.0)">AB061</text>
+<text x="313.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">8</text>
+<text x="313.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s6</text>
+<rect x="330" y="226" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="343.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A11</text>
+<text x="347.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 347.5 290.0)">GND</text>
+<rect x="360" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="373.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A12</text>
+<text x="377.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 377.5 290.0)">AB071</text>
+<text x="373.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">9</text>
+<text x="373.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s31</text>
+<rect x="390" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="403.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A13</text>
+<text x="407.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 407.5 290.0)">AB081</text>
+<text x="403.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">11</text>
+<text x="403.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s7</text>
+<rect x="420" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="433.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A14</text>
+<text x="437.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 437.5 290.0)">AB091</text>
+<text x="433.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">12</text>
+<text x="433.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s32</text>
+<rect x="450" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="463.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A15</text>
+<text x="467.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 467.5 290.0)">AB101</text>
+<text x="463.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">13</text>
+<text x="463.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s8</text>
+<rect x="480" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="493.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A16</text>
+<text x="497.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 497.5 290.0)">AB111</text>
+<text x="493.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">14</text>
+<text x="493.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s33</text>
+<rect x="510" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="523.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A17</text>
+<text x="527.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 527.5 290.0)">AB121</text>
+<rect x="540" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="553.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A18</text>
+<text x="557.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 557.5 290.0)">AB131</text>
+<rect x="570" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="583.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A19</text>
+<text x="587.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 587.5 290.0)">AB141</text>
+<rect x="600" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="613.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A20</text>
+<text x="617.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 617.5 290.0)">AB151</text>
+<rect x="630" y="226" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="643.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A21</text>
+<text x="647.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 647.5 290.0)">GND</text>
+<rect x="660" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="673.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A22</text>
+<text x="677.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 677.5 290.0)">AB161</text>
+<rect x="690" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="703.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A23</text>
+<text x="707.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 707.5 290.0)">AB171</text>
+<rect x="720" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="733.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A24</text>
+<text x="737.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 737.5 290.0)">AB181</text>
+<rect x="750" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="763.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A25</text>
+<text x="767.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 767.5 290.0)">AB191</text>
+<rect x="780" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="793.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A26</text>
+<text x="797.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 797.5 290.0)">AB201</text>
+<rect x="810" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="823.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A27</text>
+<text x="827.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 827.5 290.0)">AB211</text>
+<rect x="840" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="853.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A28</text>
+<text x="857.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 857.5 290.0)">AB221</text>
+<rect x="870" y="226" width="27" height="120" rx="3" fill="#9ec5f8" stroke="#444" stroke-width="1"/>
+<text x="883.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A29</text>
+<text x="887.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 887.5 290.0)">AB231</text>
+<rect x="900" y="226" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="913.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A30</text>
+<text x="917.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 917.5 290.0)">INT0</text>
+<rect x="930" y="226" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="943.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A31</text>
+<text x="947.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 947.5 290.0)">GND</text>
+<rect x="960" y="226" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="973.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A32</text>
+<text x="977.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 977.5 290.0)">IOCHK0</text>
+<rect x="990" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="1003.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A33</text>
+<text x="1007.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1007.5 290.0)">IOR0</text>
+<text x="1003.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">32</text>
+<text x="1003.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s20</text>
+<rect x="1020" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="1033.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A34</text>
+<text x="1037.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1037.5 290.0)">IOW0</text>
+<text x="1033.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">33</text>
+<text x="1033.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s45</text>
+<rect x="1050" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1063.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A35</text>
+<text x="1067.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1067.5 290.0)">MRC0</text>
+<rect x="1080" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1093.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A36</text>
+<text x="1097.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1097.5 290.0)">MWC0</text>
+<rect x="1110" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1123.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A37</text>
+<text x="1127.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1127.5 290.0)">INTA0</text>
+<rect x="1140" y="226" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="1153.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A38</text>
+<text x="1157.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1157.5 290.0)">NOWAIT0</text>
+<rect x="1170" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1183.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A39</text>
+<text x="1187.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1187.5 290.0)">SALE1</text>
+<rect x="1200" y="226" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="1213.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A40</text>
+<text x="1217.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1217.5 290.0)">MACS0</text>
+<rect x="1230" y="226" width="27" height="120" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="1243.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A41</text>
+<text x="1247.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1247.5 290.0)">GND</text>
+<rect x="1260" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="1273.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A42</text>
+<text x="1277.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1277.5 290.0)">CPUENB0</text>
+<text x="1273.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">34</text>
+<text x="1273.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s35</text>
+<rect x="1290" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1303.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A43</text>
+<text x="1307.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1307.5 290.0)">RFSH0</text>
+<rect x="1320" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1333.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A44</text>
+<text x="1337.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1337.5 290.0)">BHE0</text>
+<rect x="1350" y="226" width="27" height="120" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="1363.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A45</text>
+<text x="1367.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1367.5 290.0)">IORDY1</text>
+<rect x="1380" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="1393.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A46</text>
+<text x="1397.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1397.5 290.0)">SCLK1</text>
+<text x="1393.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#c00000">31</text>
+<text x="1393.5" y="328" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s22</text>
+<rect x="1410" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1423.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A47</text>
+<text x="1427.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1427.5 290.0)">S18CLK1</text>
+<rect x="1440" y="226" width="27" height="120" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1453.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A48</text>
+<text x="1457.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1457.5 290.0)">POWER0</text>
+<rect x="1470" y="226" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="1483.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A49</text>
+<text x="1487.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1487.5 290.0)">+5V</text>
+<text x="1483.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s24</text>
+<rect x="1500" y="226" width="27" height="120" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="1513.5" y="241" font-size="10" font-weight="bold" text-anchor="middle">A50</text>
+<text x="1517.5" y="290.0" font-size="10" text-anchor="middle" transform="rotate(-90 1517.5 290.0)">+5V</text>
+<text x="1513.5" y="340" font-size="9" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s25</text>
+<text x="30" y="414" font-size="15" font-weight="bold">SASI コネクタ P2（40 ピン、マザーボードを上から見た図。左上 21、右下 20）。赤字は相手の C-bus のピン</text>
+<rect x="30" y="422" width="62" height="130" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="61.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">21</text>
+<text x="65.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 65.0 491.0)">GND</text>
+<rect x="96" y="422" width="62" height="130" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="127.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">22</text>
+<text x="131.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 131.0 491.0)">DB0</text>
+<text x="127.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B4</text>
+<text x="127.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s14</text>
+<rect x="162" y="422" width="62" height="130" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="193.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">23</text>
+<text x="197.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 197.0 491.0)">DB1</text>
+<text x="193.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B5</text>
+<text x="193.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s39</text>
+<rect x="228" y="422" width="62" height="130" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="259.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">24</text>
+<text x="263.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 263.0 491.0)">DB2</text>
+<text x="259.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B6</text>
+<text x="259.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s15</text>
+<rect x="294" y="422" width="62" height="130" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="325.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">25</text>
+<text x="329.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 329.0 491.0)">DB3</text>
+<text x="325.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B7</text>
+<text x="325.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s40</text>
+<rect x="360" y="422" width="62" height="130" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="391.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">26</text>
+<text x="395.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 395.0 491.0)">DB4</text>
+<text x="391.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B8</text>
+<text x="391.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s16</text>
+<rect x="426" y="422" width="62" height="130" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="457.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">27</text>
+<text x="461.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 461.0 491.0)">DB5</text>
+<text x="457.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B9</text>
+<text x="457.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s41</text>
+<rect x="492" y="422" width="62" height="130" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="523.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">28</text>
+<text x="527.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 527.0 491.0)">DB6</text>
+<text x="523.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B10</text>
+<text x="523.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s18</text>
+<rect x="558" y="422" width="62" height="130" rx="3" fill="#9fdfa8" stroke="#c00000" stroke-width="3"/>
+<text x="589.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">29</text>
+<text x="593.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 593.0 491.0)">DB7</text>
+<text x="589.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B12</text>
+<text x="589.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s43</text>
+<rect x="624" y="422" width="62" height="130" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="655.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">30</text>
+<text x="659.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 659.0 491.0)">GND</text>
+<rect x="690" y="422" width="62" height="130" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="721.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">31</text>
+<text x="725.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 725.0 491.0)">SCLK</text>
+<text x="721.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A46</text>
+<text x="721.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s22</text>
+<rect x="756" y="422" width="62" height="130" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="787.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">32</text>
+<text x="791.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 791.0 491.0)">IOR0</text>
+<text x="787.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A33</text>
+<text x="787.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s20</text>
+<rect x="822" y="422" width="62" height="130" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="853.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">33</text>
+<text x="857.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 857.0 491.0)">IOW0</text>
+<text x="853.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A34</text>
+<text x="853.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s45</text>
+<rect x="888" y="422" width="62" height="130" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="919.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">34</text>
+<text x="923.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 923.0 491.0)">CPUENB0</text>
+<text x="919.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A42</text>
+<text x="919.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s35</text>
+<rect x="954" y="422" width="62" height="130" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="985.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">35</text>
+<text x="989.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 989.0 491.0)">RESET0</text>
+<text x="985.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B34</text>
+<text x="985.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s23</text>
+<rect x="1020" y="422" width="62" height="130" rx="3" fill="#ffffff" stroke="#444" stroke-width="1"/>
+<text x="1051.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">36</text>
+<text x="1055.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 1055.0 491.0)">SASI_CONFIG#</text>
+<rect x="1086" y="422" width="62" height="130" rx="3" fill="#f3e58a" stroke="#c00000" stroke-width="3"/>
+<text x="1117.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">37</text>
+<text x="1121.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 1121.0 491.0)">IR9</text>
+<text x="1117.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B27</text>
+<text x="1117.0" y="531" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s12</text>
+<rect x="1152" y="422" width="62" height="130" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="1183.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">38</text>
+<text x="1187.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 1187.0 491.0)">GND</text>
+<rect x="1218" y="422" width="62" height="130" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
+<text x="1249.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">39</text>
+<text x="1253.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 1253.0 491.0)">HD LED?</text>
+<text x="1249.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s37</text>
+<rect x="1284" y="422" width="62" height="130" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="1315.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">40</text>
+<text x="1319.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 1319.0 491.0)">+5V</text>
+<rect x="30" y="558" width="62" height="130" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="61.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">1</text>
+<text x="65.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 65.0 627.0)">GND</text>
+<rect x="96" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="127.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">2</text>
+<text x="131.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 131.0 627.0)">AB00</text>
+<text x="127.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A4</text>
+<text x="127.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s2</text>
+<rect x="162" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="193.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">3</text>
+<text x="197.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 197.0 627.0)">AB01</text>
+<text x="193.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A5</text>
+<text x="193.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s27</text>
+<rect x="228" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="259.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">4</text>
+<text x="263.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 263.0 627.0)">AB02</text>
+<text x="259.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A6</text>
+<text x="259.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s3</text>
+<rect x="294" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="325.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">5</text>
+<text x="329.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 329.0 627.0)">AB03</text>
+<text x="325.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A7</text>
+<text x="325.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s28</text>
+<rect x="360" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="391.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">6</text>
+<text x="395.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 395.0 627.0)">AB04</text>
+<text x="391.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A8</text>
+<text x="391.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s4</text>
+<rect x="426" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="457.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">7</text>
+<text x="461.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 461.0 627.0)">AB05</text>
+<text x="457.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A9</text>
+<text x="457.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s29</text>
+<rect x="492" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="523.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">8</text>
+<text x="527.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 527.0 627.0)">AB06</text>
+<text x="523.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A10</text>
+<text x="523.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s6</text>
+<rect x="558" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="589.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">9</text>
+<text x="593.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 593.0 627.0)">AB07</text>
+<text x="589.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A12</text>
+<text x="589.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s31</text>
+<rect x="624" y="558" width="62" height="130" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="655.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">10</text>
+<text x="659.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 659.0 627.0)">GND</text>
+<rect x="690" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="721.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">11</text>
+<text x="725.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 725.0 627.0)">AB08</text>
+<text x="721.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A13</text>
+<text x="721.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s7</text>
+<rect x="756" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="787.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">12</text>
+<text x="791.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 791.0 627.0)">AB09</text>
+<text x="787.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A14</text>
+<text x="787.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s32</text>
+<rect x="822" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="853.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">13</text>
+<text x="857.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 857.0 627.0)">AB10</text>
+<text x="853.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A15</text>
+<text x="853.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s8</text>
+<rect x="888" y="558" width="62" height="130" rx="3" fill="#9ec5f8" stroke="#c00000" stroke-width="3"/>
+<text x="919.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">14</text>
+<text x="923.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 923.0 627.0)">AB11</text>
+<text x="919.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">A16</text>
+<text x="919.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s33</text>
+<rect x="954" y="558" width="62" height="130" rx="3" fill="#f3e58a" stroke="#c00000" stroke-width="3"/>
+<text x="985.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">15</text>
+<text x="989.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 989.0 627.0)">DRQ0</text>
+<text x="985.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B37</text>
+<text x="985.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s11</text>
+<rect x="1020" y="558" width="62" height="130" rx="3" fill="#f7c98b" stroke="#c00000" stroke-width="3"/>
+<text x="1051.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">16</text>
+<text x="1055.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 1055.0 627.0)">DACK0</text>
+<text x="1051.0" y="682" font-size="12" font-weight="bold" text-anchor="middle" fill="#c00000">B35</text>
+<text x="1051.0" y="667" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s36</text>
+<rect x="1086" y="558" width="62" height="130" rx="3" fill="#f7c98b" stroke="#444" stroke-width="1"/>
+<text x="1117.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">17</text>
+<text x="1121.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 1121.0 627.0)">EOP# (8237-36)</text>
+<rect x="1152" y="558" width="62" height="130" rx="3" fill="#b8b8b8" stroke="#444" stroke-width="1"/>
+<text x="1183.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">18</text>
+<text x="1187.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 1187.0 627.0)">GND</text>
+<rect x="1218" y="558" width="62" height="130" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="1249.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">19</text>
+<text x="1253.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 1253.0 627.0)">+5V</text>
+<rect x="1284" y="558" width="62" height="130" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
+<text x="1315.0" y="573" font-size="13" font-weight="bold" text-anchor="middle">20</text>
+<text x="1319.0" y="627.0" font-size="13" text-anchor="middle" transform="rotate(-90 1319.0 627.0)">+5V</text>
+<text x="30" y="756" font-size="15" font-weight="bold">RA2、RA21、DA などのハードディスク専用スロットの SASI の側（50 ピンのカードエッジ。Project MPS「PM-DOCE98 技術情報」による。k 番と 25 + k 番が向かい合う）。赤字は C-bus のピン、青字は P2 のピン</text>
+<rect x="30" y="764" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="58.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">26</text>
+<text x="62.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 62.0 833.0)">GND</text>
+<rect x="90" y="764" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="118.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">27</text>
+<text x="122.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 122.0 833.0)">AB01</text>
+<text x="118.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A5</text>
+<text x="118.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-3</text>
+<rect x="150" y="764" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="178.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">28</text>
+<text x="182.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 182.0 833.0)">AB03</text>
+<text x="178.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A7</text>
+<text x="178.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-5</text>
+<rect x="210" y="764" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="238.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">29</text>
+<text x="242.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 242.0 833.0)">AB05</text>
+<text x="238.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A9</text>
+<text x="238.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-7</text>
+<rect x="270" y="764" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="298.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">30</text>
+<text x="302.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 302.0 833.0)">GND</text>
+<rect x="330" y="764" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="358.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">31</text>
+<text x="362.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 362.0 833.0)">AB07</text>
+<text x="358.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A12</text>
+<text x="358.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-9</text>
+<rect x="390" y="764" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="418.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">32</text>
+<text x="422.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 422.0 833.0)">AB09</text>
+<text x="418.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A14</text>
+<text x="418.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-12</text>
+<rect x="450" y="764" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="478.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">33</text>
+<text x="482.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 482.0 833.0)">AB11</text>
+<text x="478.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A16</text>
+<text x="478.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-14</text>
+<rect x="510" y="764" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="538.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">34</text>
+<text x="542.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 542.0 833.0)">GND</text>
+<rect x="570" y="764" width="56" height="130" rx="3" fill="#f7c98b" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="598.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">35</text>
+<text x="602.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 602.0 833.0)">CPUENB0</text>
+<text x="598.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A42</text>
+<text x="598.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-34</text>
+<rect x="630" y="764" width="56" height="130" rx="3" fill="#f7c98b" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="658.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">36</text>
+<text x="662.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 662.0 833.0)">DACK0</text>
+<text x="658.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B35</text>
+<text x="658.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-16</text>
+<rect x="690" y="764" width="56" height="130" rx="3" fill="#f3e58a" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="718.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">37</text>
+<text x="722.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 722.0 833.0)">HD LED</text>
+<text x="718.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-39</text>
+<rect x="750" y="764" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="778.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">38</text>
+<text x="782.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 782.0 833.0)">GND</text>
+<rect x="810" y="764" width="56" height="130" rx="3" fill="#9fdfa8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="838.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">39</text>
+<text x="842.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 842.0 833.0)">DB1</text>
+<text x="838.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B5</text>
+<text x="838.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-23</text>
+<rect x="870" y="764" width="56" height="130" rx="3" fill="#9fdfa8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="898.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">40</text>
+<text x="902.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 902.0 833.0)">DB3</text>
+<text x="898.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B7</text>
+<text x="898.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-25</text>
+<rect x="930" y="764" width="56" height="130" rx="3" fill="#9fdfa8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="958.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">41</text>
+<text x="962.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 962.0 833.0)">DB5</text>
+<text x="958.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B9</text>
+<text x="958.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-27</text>
+<rect x="990" y="764" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1018.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">42</text>
+<text x="1022.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 1022.0 833.0)">GND</text>
+<rect x="1050" y="764" width="56" height="130" rx="3" fill="#9fdfa8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1078.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">43</text>
+<text x="1082.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 1082.0 833.0)">DB7</text>
+<text x="1078.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B12</text>
+<text x="1078.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-29</text>
+<rect x="1110" y="764" width="56" height="130" rx="3" fill="#ffffff" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1138.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">44</text>
+<text x="1142.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 1142.0 833.0)">NC</text>
+<rect x="1170" y="764" width="56" height="130" rx="3" fill="#f7c98b" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1198.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">45</text>
+<text x="1202.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 1202.0 833.0)">IOW0</text>
+<text x="1198.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A34</text>
+<text x="1198.0" y="874" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-33</text>
+<rect x="1230" y="764" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1258.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">46</text>
+<text x="1262.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 1262.0 833.0)">GND</text>
+<rect x="1290" y="764" width="56" height="130" rx="3" fill="#ffffff" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1318.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">47</text>
+<text x="1322.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 1322.0 833.0)">NC</text>
+<rect x="1350" y="764" width="56" height="130" rx="3" fill="#ffffff" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1378.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">48</text>
+<text x="1382.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 1382.0 833.0)">NC</text>
+<rect x="1410" y="764" width="56" height="130" rx="3" fill="#f4a6a6" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1438.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">49</text>
+<text x="1442.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 1442.0 833.0)">VCC</text>
+<text x="1438.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A49</text>
+<rect x="1470" y="764" width="56" height="130" rx="3" fill="#f4a6a6" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1498.0" y="779" font-size="12" font-weight="bold" text-anchor="middle">50</text>
+<text x="1502.0" y="833.0" font-size="12" text-anchor="middle" transform="rotate(-90 1502.0 833.0)">VCC</text>
+<text x="1498.0" y="888" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A50</text>
+<rect x="30" y="900" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="58.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+<text x="62.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 62.0 969.0)">GND</text>
+<rect x="90" y="900" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="118.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+<text x="122.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 122.0 969.0)">AB00</text>
+<text x="118.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A4</text>
+<text x="118.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-2</text>
+<rect x="150" y="900" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="178.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">3</text>
+<text x="182.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 182.0 969.0)">AB02</text>
+<text x="178.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A6</text>
+<text x="178.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-4</text>
+<rect x="210" y="900" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="238.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">4</text>
+<text x="242.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 242.0 969.0)">AB04</text>
+<text x="238.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A8</text>
+<text x="238.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-6</text>
+<rect x="270" y="900" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="298.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">5</text>
+<text x="302.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 302.0 969.0)">GND</text>
+<rect x="330" y="900" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="358.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">6</text>
+<text x="362.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 362.0 969.0)">AB06</text>
+<text x="358.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A10</text>
+<text x="358.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-8</text>
+<rect x="390" y="900" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="418.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">7</text>
+<text x="422.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 422.0 969.0)">AB08</text>
+<text x="418.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A13</text>
+<text x="418.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-11</text>
+<rect x="450" y="900" width="56" height="130" rx="3" fill="#9ec5f8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="478.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">8</text>
+<text x="482.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 482.0 969.0)">AB10</text>
+<text x="478.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A15</text>
+<text x="478.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-13</text>
+<rect x="510" y="900" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="538.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">9</text>
+<text x="542.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 542.0 969.0)">GND</text>
+<rect x="570" y="900" width="56" height="130" rx="3" fill="#f7c98b" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="598.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">10</text>
+<text x="602.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 602.0 969.0)">DMATC0</text>
+<text x="598.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B43</text>
+<rect x="630" y="900" width="56" height="130" rx="3" fill="#f3e58a" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="658.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">11</text>
+<text x="662.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 662.0 969.0)">DRQ0</text>
+<text x="658.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B37</text>
+<text x="658.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-15</text>
+<rect x="690" y="900" width="56" height="130" rx="3" fill="#f3e58a" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="718.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">12</text>
+<text x="722.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 722.0 969.0)">IR9</text>
+<text x="718.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B27</text>
+<text x="718.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-37</text>
+<rect x="750" y="900" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="778.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">13</text>
+<text x="782.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 782.0 969.0)">GND</text>
+<rect x="810" y="900" width="56" height="130" rx="3" fill="#9fdfa8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="838.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">14</text>
+<text x="842.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 842.0 969.0)">DB0</text>
+<text x="838.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B4</text>
+<text x="838.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-22</text>
+<rect x="870" y="900" width="56" height="130" rx="3" fill="#9fdfa8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="898.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">15</text>
+<text x="902.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 902.0 969.0)">DB2</text>
+<text x="898.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B6</text>
+<text x="898.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-24</text>
+<rect x="930" y="900" width="56" height="130" rx="3" fill="#9fdfa8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="958.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">16</text>
+<text x="962.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 962.0 969.0)">DB4</text>
+<text x="958.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B8</text>
+<text x="958.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-26</text>
+<rect x="990" y="900" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1018.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">17</text>
+<text x="1022.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 1022.0 969.0)">GND</text>
+<rect x="1050" y="900" width="56" height="130" rx="3" fill="#9fdfa8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1078.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">18</text>
+<text x="1082.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 1082.0 969.0)">DB6</text>
+<text x="1078.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B10</text>
+<text x="1078.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-28</text>
+<rect x="1110" y="900" width="56" height="130" rx="3" fill="#ffffff" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1138.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">19</text>
+<text x="1142.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 1142.0 969.0)">NC</text>
+<rect x="1170" y="900" width="56" height="130" rx="3" fill="#f7c98b" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1198.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">20</text>
+<text x="1202.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 1202.0 969.0)">IOR0</text>
+<text x="1198.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A33</text>
+<text x="1198.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-32</text>
+<rect x="1230" y="900" width="56" height="130" rx="3" fill="#b8b8b8" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1258.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">21</text>
+<text x="1262.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 1262.0 969.0)">GND</text>
+<rect x="1290" y="900" width="56" height="130" rx="3" fill="#f7c98b" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1318.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">22</text>
+<text x="1322.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 1322.0 969.0)">SCLK</text>
+<text x="1318.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A46</text>
+<text x="1318.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-31</text>
+<rect x="1350" y="900" width="56" height="130" rx="3" fill="#f7c98b" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1378.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">23</text>
+<text x="1382.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 1382.0 969.0)">RESET0</text>
+<text x="1378.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">B34</text>
+<text x="1378.0" y="1010" font-size="11" font-weight="bold" text-anchor="middle" fill="#1f5fbf">P2-35</text>
+<rect x="1410" y="900" width="56" height="130" rx="3" fill="#f4a6a6" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1438.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">24</text>
+<text x="1442.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 1442.0 969.0)">VCC</text>
+<text x="1438.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A49</text>
+<rect x="1470" y="900" width="56" height="130" rx="3" fill="#f4a6a6" stroke="#1f5fbf" stroke-width="2" stroke-dasharray="5 3"/>
+<text x="1498.0" y="915" font-size="12" font-weight="bold" text-anchor="middle">25</text>
+<text x="1502.0" y="969.0" font-size="12" text-anchor="middle" transform="rotate(-90 1502.0 969.0)">VCC</text>
+<text x="1498.0" y="1024" font-size="11" font-weight="bold" text-anchor="middle" fill="#c00000">A50</text>
+<rect x="30" y="1066" width="18" height="18" fill="#f4a6a6" stroke="#444"/>
+<text x="54" y="1080" font-size="13">電源</text>
+<rect x="106" y="1066" width="18" height="18" fill="#b8b8b8" stroke="#444"/>
+<text x="130" y="1080" font-size="13">GND</text>
+<rect x="196" y="1066" width="18" height="18" fill="#9ec5f8" stroke="#444"/>
+<text x="220" y="1080" font-size="13">アドレス</text>
+<rect x="300" y="1066" width="18" height="18" fill="#9fdfa8" stroke="#444"/>
+<text x="324" y="1080" font-size="13">データ</text>
+<rect x="390" y="1066" width="18" height="18" fill="#f7c98b" stroke="#444"/>
+<text x="414" y="1080" font-size="13">制御（本体→ユニット）</text>
+<rect x="592" y="1066" width="18" height="18" fill="#f3e58a" stroke="#444"/>
+<text x="616" y="1080" font-size="13">ユニット→本体</text>
+<rect x="738" y="1066" width="18" height="18" fill="#ffffff" stroke="#444"/>
+<text x="762" y="1080" font-size="13">未確定 / C-bus にない</text>
+<text x="30" y="1112" font-size="13">P2-36 は UX-31 側では GND だが、マザーボード側ではジャンパ（5-4）経由の SASI_CONFIG#。C-bus にはない。P2-39（HD LED）と P2-17（8237 の EOP#）も C-bus にはない。</text>
+<text x="30" y="1132" font-size="13">GND（P2-1、10、18、21、30、38）はマザーボード側で GND と導通を確認。+5V（P2-19、20、40）は A49、A50、B49、B50 と導通するはず。</text>
+<text x="30" y="1152" font-size="13">C-bus の AB071 は A12（A11 は GND）、DB071 は B12（B11 は GND）。1 本ずつずれやすいので注意。</text>
+<text x="30" y="1172" font-size="13">専用スロットの TC は C-bus の DMATC0（s10 = B43）で、P2-17（8237 の EOP# 直結）とは出どころが違う。P2-36 の SASI_CONFIG# に当たる線は専用スロットにない（NC は s19、s44、s47、s48）。</text>
+<text x="30" y="1192" font-size="13">専用スロットの図は資料の表から描いたもので、どちらの列が上かと、カードを挿す向きは確かめていない（RA2 などは SASI だけの 1 段、RA21、DA、DX などはこの段の上に SCSI の段が重なる）。</text>
+</svg>

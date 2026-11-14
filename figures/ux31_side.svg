@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1252" height="850" viewBox="0 0 1252 850" font-family="sans-serif">
+<rect width="1252" height="850" fill="#ffffff"/>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#333"/></marker><marker id="d" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,0 L8,3 L0,6 z" fill="#1565c0"/></marker></defs>
+<text x="30" y="36" font-size="22" font-weight="bold">PC-9801UX-31 を横から見た図（2026-11-02、寸法は 2026-11-04）</text>
+<text x="30" y="60" font-size="13" fill="#333">左が本体の前、右が後ろ。3 段の間は広げて描いた。寸法の数字は測定（2026-11-04）。</text>
+<text x="30" y="78" font-size="13" fill="#333">数字のない位置（ドライブ、各段の高さなど）は写真（docs/photos/ux31_*.jpg）から読んだ概略。</text>
+<line x1="90.0" y1="160" x2="90.0" y2="780" stroke="#999" stroke-width="3"/>
+<text x="80.0" y="180" font-size="13" text-anchor="end" fill="#555">前</text>
+<line x1="922.0" y1="160" x2="922.0" y2="780" stroke="#999" stroke-width="3"/>
+<text x="932.0" y="180" font-size="13" fill="#555">後ろ（背面）</text>
+<rect x="90.0" y="700" width="832.0" height="10" fill="#c8e6c9" stroke="#333" stroke-width="1.5"/>
+<text x="106.0" y="750" font-size="15" font-weight="bold">UX のマザーボード</text>
+<rect x="158" y="678" width="24" height="22" fill="#f4a6a6" stroke="#333" stroke-width="1.2"/>
+<text x="170" y="715" font-size="12" text-anchor="middle"></text>
+<text x="370.0" y="694" font-size="12">マザーボードの P2（40 ピン、オスのボックスヘッダ、上向き）</text>
+<line x1="170" y1="710" x2="170" y2="724" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="170" y1="724" x2="922" y2="724" stroke="#1565c0" stroke-width="1.3" marker-end="url(#d)" marker-start="url(#d)"/>
+<text x="546" y="720" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="middle">P2 の中心 → 背面 188 mm（146.5 + 41.5。前の測定の約 18 cm と合う）</text>
+<rect x="138" y="604" width="618" height="10" fill="#9ec5f8" stroke="#333" stroke-width="1.5"/>
+<text x="202" y="578" font-size="15" font-weight="bold">1 段目: ホストアダプタ</text>
+<text x="202" y="596" font-size="12" fill="#333">はんだ面が上、部品面（IC と P2 のメス）が下。P2 は前の端、P1 は後ろの端</text>
+<rect x="150" y="586" width="28" height="18" fill="#e57373" stroke="#333" stroke-width="1.2"/>
+<rect x="142" y="590" width="8" height="8" fill="#fff" stroke="#555"/>
+<text x="184" y="520" font-size="12">SW1（容量コードの DIP スイッチ、はんだ面。P2 の裏）</text>
+<line x1="182" y1="524" x2="166" y2="582" stroke="#333" stroke-width="1"/>
+<rect x="114" y="604" width="24" height="10" fill="#fffdf5" stroke="#333" stroke-width="1.2"/>
+<line x1="126" y1="548" x2="126" y2="600" stroke="#c0392b" stroke-width="2" marker-end="url(#a)"/>
+<text x="108" y="542" font-size="12" fill="#c0392b">タブ（白。挿すときにここを押す）</text>
+<rect x="158" y="614" width="24" height="30" fill="#f4a6a6" stroke="#333" stroke-width="1.2"/>
+<text x="186" y="634" font-size="12" text-anchor="start">P2（メス、部品面）</text>
+<line x1="170.0" y1="646" x2="170.0" y2="676" stroke="#c0392b" stroke-width="2" marker-end="url(#a)"/>
+<text x="186.0" y="654" font-size="12" fill="#c0392b">マザーボードの P2 に直接挿さる</text>
+<rect x="282" y="614" width="40" height="12" fill="#ddd" stroke="#777"/>
+<rect x="354" y="614" width="40" height="12" fill="#ddd" stroke="#777"/>
+<rect x="426" y="614" width="40" height="12" fill="#ddd" stroke="#777"/>
+<rect x="498" y="614" width="40" height="12" fill="#ddd" stroke="#777"/>
+<rect x="570" y="614" width="40" height="12" fill="#ddd" stroke="#777"/>
+<rect x="630" y="582" width="24" height="22" fill="#f7c98b" stroke="#333" stroke-width="1.2"/>
+<text x="642" y="574" font-size="12" text-anchor="middle"></text>
+<text x="656.0" y="596" font-size="12">P1（2 × 25、はんだ面）</text>
+<rect x="150" y="390" width="760" height="10" fill="#9fdfa8" stroke="#333" stroke-width="1.5"/>
+<text x="158" y="382" font-size="15" font-weight="bold">2 段目: コントローラ（SASI → ST-506）</text>
+<rect x="182" y="400" width="48" height="12" fill="#ddd" stroke="#777"/>
+<rect x="254" y="400" width="48" height="12" fill="#ddd" stroke="#777"/>
+<text x="158" y="430" font-size="12" fill="#333">部品面（IC、U9、J7）が下、はんだ面（ST-506 のケーブル）が上</text>
+<rect x="630" y="400" width="24" height="18" fill="#f7c98b" stroke="#333" stroke-width="1.2"/>
+<text x="626" y="416" font-size="12" text-anchor="end">SASI の 50 ピン（U9、部品面）</text>
+<rect x="668" y="372" width="32" height="18" fill="#f3e58a" stroke="#333" stroke-width="1.2"/>
+<text x="684" y="366" font-size="12" text-anchor="middle"></text>
+<text x="670.0" y="364" font-size="12" text-anchor="end">ST-506 のケーブルのコネクタ（J1、J3。はんだ面）</text>
+<rect x="882" y="384" width="64" height="64" fill="#e0e0e0" stroke="#333" stroke-width="1.2"/>
+<text x="914" y="446" font-size="12" text-anchor="middle"></text>
+<text x="954.0" y="398" font-size="12">J7（アンフェノール 50 ピン、</text>
+<text x="954.0" y="414" font-size="12">部品面。ST-506。背面の板から外に出る）</text>
+<polyline points="642,582 642,510 642,510 642,418" fill="none" stroke="#7d3c98" stroke-width="3" stroke-dasharray="7 4"/>
+<text x="654.0" y="494" font-size="12" fill="#7d3c98">SASI の 50 ピンのフラットケーブル</text>
+<text x="654.0" y="510" font-size="12" fill="#7d3c98">（P1 の 20、22、30、32 番の +5 V もここを通る）</text>
+<polygon points="154,195 690,195 690,239 570,239 570,285 154,285" fill="#eeeeee" stroke="#333" stroke-width="1.5"/>
+<text x="162" y="187" font-size="15" font-weight="bold">3 段目: ドライブ（NEC D3126、3.5 インチ）</text>
+<rect x="148" y="189" width="8" height="114" fill="#d7ccc8" stroke="#333"/>
+<text x="164" y="245" font-size="12">前面の板</text>
+<line x1="138" y1="189" x2="138" y2="303" stroke="#1565c0" stroke-width="1.3" marker-end="url(#d)" marker-start="url(#d)"/>
+<text x="164" y="263" font-size="12" font-weight="bold" fill="#1565c0">← 前面の板の高さ 42.5 mm</text>
+<text x="164" y="278" font-size="11" fill="#1565c0">（3 段目全体の高さとほぼ同じ）</text>
+<rect x="158" y="285" width="556" height="8" fill="#9fdfa8" stroke="#333"/>
+<rect x="194" y="293" width="48" height="10" fill="#ddd" stroke="#777"/>
+<rect x="274" y="293" width="48" height="10" fill="#ddd" stroke="#777"/>
+<rect x="354" y="293" width="48" height="10" fill="#ddd" stroke="#777"/>
+<rect x="434" y="293" width="48" height="10" fill="#ddd" stroke="#777"/>
+<rect x="514" y="293" width="48" height="10" fill="#ddd" stroke="#777"/>
+<text x="170" y="319" font-size="12">ドライブの基板（IC は下向き）</text>
+<text x="170" y="335" font-size="11" fill="#1565c0">下の面の IC の高さは、前面の板の下端を越えない</text>
+<rect x="702" y="277" width="36" height="24" rx="2" fill="#f3e58a" stroke="#333" stroke-width="1.2"/>
+<text x="684.0" y="319" font-size="12" text-anchor="end">カードエッジ（34、20 ピン）を後ろから挿す →</text>
+<rect x="586" y="267" width="88" height="18" fill="#f4a6a6" stroke="#333" stroke-width="1.2"/>
+<rect x="600" y="269" width="8" height="10" fill="#fff" stroke="#777"/>
+<rect x="620" y="269" width="8" height="10" fill="#fff" stroke="#777"/>
+<rect x="641" y="269" width="8" height="10" fill="#fff" stroke="#777"/>
+<rect x="661" y="269" width="8" height="10" fill="#fff" stroke="#777"/>
+<rect x="590" y="253" width="80" height="14" fill="#fff3e0" stroke="#333"/>
+<line x1="604" y1="253" x2="604" y2="247" stroke="#7d3c98" stroke-width="2"/>
+<line x1="624" y1="253" x2="624" y2="247" stroke="#7d3c98" stroke-width="2"/>
+<line x1="645" y1="253" x2="645" y2="247" stroke="#7d3c98" stroke-width="2"/>
+<line x1="665" y1="253" x2="665" y2="247" stroke="#7d3c98" stroke-width="2"/>
+<polyline points="604,247 916,247" fill="none" stroke="#7d3c98" stroke-width="3" stroke-dasharray="7 4"/>
+<text x="700.0" y="217" font-size="12">Molex 4 ピン（本体の電源から）</text>
+<text x="700.0" y="233" font-size="12">基板の上に立ち、口が上向き。4 ピンが前後に並ぶ</text>
+<polyline points="684,372 684,365 762,365 762,289 738,289" fill="none" stroke="#7d3c98" stroke-width="3" stroke-dasharray="7 4"/>
+<text x="442.0" y="345" font-size="12" fill="#7d3c98">ST-506 の制御（34 ピン）とデータ（20 ピン）のケーブル</text>
+<line x1="642" y1="614" x2="642" y2="754" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="642" y1="754" x2="922" y2="754" stroke="#1565c0" stroke-width="1.3" marker-end="url(#d)" marker-start="url(#d)"/>
+<text x="782" y="750" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="middle">P1 の中心 → 背面 70 mm</text>
+<line x1="170" y1="644" x2="170" y2="668" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="756" y1="614" x2="756" y2="668" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="170" y1="668" x2="756" y2="668" stroke="#1565c0" stroke-width="1.3" marker-end="url(#d)" marker-start="url(#d)"/>
+<text x="463" y="664" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="middle">ホストアダプタの後ろの縁 → P2 の中心 146.5 mm</text>
+<line x1="756" y1="604" x2="756" y2="568" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="642" y1="568" x2="756" y2="568" stroke="#1565c0" stroke-width="1.3" marker-end="url(#d)" marker-start="url(#d)"/>
+<text x="762" y="564" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="start">28.5 mm</text>
+<text x="762" y="552" font-size="11" fill="#1565c0">後ろの縁 → P1 の中心</text>
+<line x1="150" y1="400" x2="150" y2="448" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="642" y1="418" x2="642" y2="448" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="150" y1="448" x2="642" y2="448" stroke="#1565c0" stroke-width="1.3" marker-end="url(#d)" marker-start="url(#d)"/>
+<text x="396" y="444" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="middle">前の縁 → SASI のコネクタ（U9）の中心 123 mm</text>
+<line x1="684" y1="390" x2="684" y2="462" stroke="#1565c0" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="150" y1="462" x2="684" y2="462" stroke="#1565c0" stroke-width="1.3" marker-end="url(#d)" marker-start="url(#d)"/>
+<text x="690" y="458" font-size="12" font-weight="bold" fill="#1565c0" text-anchor="start">前の縁 → ST-506 のコネクタの中心 133.5 mm</text>
+<line x1="258" y1="400" x2="258" y2="604" stroke="#1565c0" stroke-width="1.3" marker-end="url(#d)" marker-start="url(#d)"/>
+<text x="264" y="482" font-size="12" font-weight="bold" fill="#1565c0">内法 16.8 mm</text>
+<text x="264" y="497" font-size="11" fill="#1565c0">（P1 と U9 をつないだとき。基板は 1.6 mm 厚。図の間は広げてある）</text>
+<text x="30" y="816" font-size="12" fill="#333">[推測] ドライブの電源（基板の上の Molex）とカードエッジの位置は D3126 の写真の左下（後ろ）と説明から描いた。コントローラの J1 / J3 と U9 の前後の位置も写真からの目安 [/推測]</text>
+<text x="30" y="834" font-size="12" fill="#333">[要確認] 各段の高さ、すき間、コネクタの端からの寸法（ノギスで測る） [/要確認]</text>
+</svg>

@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2020" height="700" viewBox="0 0 2020 700" font-family="sans-serif">
+<rect width="2020" height="700" fill="#ffffff"/>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse"><path d="M0,0 L10,4 L0,8 z" fill="#333"/></marker></defs>
+<text x="30" y="36" font-size="22" font-weight="bold">PC-9801UX-31 の中のバス（2026-11-03）</text>
+<text x="30" y="60" font-size="13" fill="#333">本体の C-bus のサブセット（P2）→ ホストアダプタ → SASI（P1）→ コントローラ → ST-506 のバス（1 組。内蔵のドライブと、J7 の外付けの 2 台目）。物理的な置き方は ux31_side.svg。信号の向きの矢印は主な向き。</text>
+<rect x="30" y="120" width="190" height="520" rx="6" fill="#fdfefe" stroke="#333" stroke-width="1.5"/>
+<text x="125.0" y="142" font-size="15" font-weight="bold" text-anchor="middle">UX の本体</text>
+<text x="125.0" y="162" font-size="12" text-anchor="middle">V30 / 80286</text>
+<text x="125.0" y="179" font-size="12" text-anchor="middle">8237（DMA）</text>
+<text x="125.0" y="196" font-size="12" text-anchor="middle">8259（割り込み）</text>
+<text x="125.0" y="213" font-size="12" text-anchor="middle">本体の ROM</text>
+<text x="125.0" y="230" font-size="12" text-anchor="middle">（拡張 ROM の SASI BIOS、</text>
+<text x="125.0" y="247" font-size="12" text-anchor="middle">D7000h の 29h 版。</text>
+<text x="125.0" y="264" font-size="12" text-anchor="middle">SASI_CONFIG# が L のとき</text>
+<text x="125.0" y="281" font-size="12" text-anchor="middle">だけ出る）</text>
+<rect x="250" y="120" width="200" height="520" rx="4" fill="#9ec5f8" stroke="#333" stroke-width="1.5"/>
+<text x="350.0" y="140" font-size="14" font-weight="bold" text-anchor="middle">P2（40 ピン）</text>
+<text x="258" y="162" font-size="12">C-bus のサブセット</text>
+<text x="258" y="179" font-size="12"></text>
+<text x="258" y="196" font-size="12">AB00〜AB11</text>
+<text x="258" y="213" font-size="12">（AB08、AB09 は見ない）</text>
+<text x="258" y="230" font-size="12">DB0〜DB7</text>
+<text x="258" y="247" font-size="12">IOR0、IOW0</text>
+<text x="258" y="264" font-size="12">CPUENB0</text>
+<text x="258" y="281" font-size="12">RESET0、SCLK</text>
+<text x="258" y="298" font-size="12"></text>
+<text x="258" y="315" font-size="12">DRQ0（15）</text>
+<text x="258" y="332" font-size="12">DACK0（16）</text>
+<text x="258" y="349" font-size="12">EOP#（17、TC）</text>
+<text x="258" y="366" font-size="12">IR9（37、INT3）</text>
+<text x="258" y="383" font-size="12"></text>
+<text x="258" y="400" font-size="12">SASI_CONFIG#（36）</text>
+<text x="258" y="417" font-size="12">→ ホストアダプタが GND に</text>
+<text x="258" y="434" font-size="12">HD のランプ（39）</text>
+<text x="258" y="451" font-size="12"></text>
+<text x="258" y="468" font-size="12">+5 V（19、20、40）、GND</text>
+<line x1="220" y1="420" x2="250" y2="420" stroke="#333" stroke-width="3" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="480" y="120" width="260" height="520" rx="6" fill="#fdfefe" stroke="#333" stroke-width="1.5"/>
+<text x="610.0" y="142" font-size="15" font-weight="bold" text-anchor="middle">ホストアダプタ</text>
+<text x="610.0" y="162" font-size="12" text-anchor="middle">基板 136-454836-B-02</text>
+<text x="610.0" y="179" font-size="12" text-anchor="middle">TTL だけ、ROM なし</text>
+<text x="610.0" y="196" font-size="12" text-anchor="middle"></text>
+<text x="610.0" y="213" font-size="12" text-anchor="middle">I/O 80h（データ）</text>
+<text x="610.0" y="230" font-size="12" text-anchor="middle">書き: ODR（74LS373）→ DB</text>
+<text x="610.0" y="247" font-size="12" text-anchor="middle">読み: IDR（74LS373）← DB</text>
+<text x="610.0" y="264" font-size="12" text-anchor="middle"></text>
+<text x="610.0" y="281" font-size="12" text-anchor="middle">I/O 82h</text>
+<text x="610.0" y="298" font-size="12" text-anchor="middle">書き: CHEN、NRDSW、SEL、</text>
+<text x="610.0" y="315" font-size="12" text-anchor="middle">RST、DMAE、INTE</text>
+<text x="610.0" y="332" font-size="12" text-anchor="middle">読み: NRDSW = 1 でバスの状態、</text>
+<text x="610.0" y="349" font-size="12" text-anchor="middle">0 で SW1（容量コードと</text>
+<text x="610.0" y="366" font-size="12" text-anchor="middle">セクタ長）</text>
+<text x="610.0" y="383" font-size="12" text-anchor="middle"></text>
+<text x="610.0" y="400" font-size="12" text-anchor="middle">ACK を作る（80h か DMA の 1 回で）</text>
+<text x="610.0" y="417" font-size="12" text-anchor="middle">DRQ0（SCLK で同期）、IR9</text>
+<text x="610.0" y="434" font-size="12" text-anchor="middle">出力 7438、受信 74LS14</text>
+<line x1="450" y1="420" x2="480" y2="420" stroke="#333" stroke-width="3" marker-end="url(#a)" marker-start="url(#a)"/>
+<text x="610" y="625" font-size="12" text-anchor="middle" fill="#555">SW1（はんだ面、P2 の裏）</text>
+<rect x="770" y="120" width="200" height="520" rx="4" fill="#f7c98b" stroke="#333" stroke-width="1.5"/>
+<text x="870.0" y="140" font-size="14" font-weight="bold" text-anchor="middle">P1（50 ピン）</text>
+<text x="778" y="162" font-size="12">SASI バス</text>
+<text x="778" y="179" font-size="12">（SCSI-1 の片側終端の並び）</text>
+<text x="778" y="196" font-size="12"></text>
+<text x="778" y="213" font-size="12">DB0#〜DB7#（2〜16）</text>
+<text x="778" y="230" font-size="12">BSY#（36）</text>
+<text x="778" y="247" font-size="12">ACK#（38）</text>
+<text x="778" y="264" font-size="12">RST#（40）</text>
+<text x="778" y="281" font-size="12">MSG#（42）</text>
+<text x="778" y="298" font-size="12">SEL#（44）</text>
+<text x="778" y="315" font-size="12">C#/D（46）</text>
+<text x="778" y="332" font-size="12">REQ#（48）</text>
+<text x="778" y="349" font-size="12">I#/O（50）</text>
+<text x="778" y="366" font-size="12"></text>
+<text x="778" y="383" font-size="12">パリティなし（18 は未使用）</text>
+<text x="778" y="400" font-size="12">20、22、30、32 番は +5 V</text>
+<text x="778" y="417" font-size="12">（コントローラの電源。</text>
+<text x="778" y="434" font-size="12">32 番の ATN# は使わない）</text>
+<text x="778" y="451" font-size="12"></text>
+<text x="778" y="468" font-size="12">奇数番（25 を除く）は GND</text>
+<line x1="740" y1="420" x2="770" y2="420" stroke="#333" stroke-width="3" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="1000" y="120" width="300" height="520" rx="6" fill="#fdfefe" stroke="#333" stroke-width="1.5"/>
+<text x="1150.0" y="142" font-size="15" font-weight="bold" text-anchor="middle">コントローラ（SASI → ST-506）</text>
+<text x="1150.0" y="162" font-size="12" text-anchor="middle">基板 134-856238-0-3</text>
+<text x="1150.0" y="179" font-size="12" text-anchor="middle"></text>
+<text x="1150.0" y="196" font-size="12" text-anchor="middle">SASI の側: 終端（220 / 330 Ω）</text>
+<text x="1150.0" y="213" font-size="12" text-anchor="middle"></text>
+<text x="1150.0" y="230" font-size="12" text-anchor="middle">μPD71071（DMA）</text>
+<text x="1150.0" y="247" font-size="12" text-anchor="middle">チャネル 1 = SASI バス側</text>
+<text x="1150.0" y="264" font-size="12" text-anchor="middle"></text>
+<text x="1150.0" y="281" font-size="12" text-anchor="middle">μPD70008A（Z80）</text>
+<text x="1150.0" y="298" font-size="12" text-anchor="middle">EPROM 27C256（DS300B-520）</text>
+<text x="1150.0" y="315" font-size="12" text-anchor="middle">RAM（セクタのバッファ）</text>
+<text x="1150.0" y="332" font-size="12" text-anchor="middle"></text>
+<text x="1150.0" y="349" font-size="12" text-anchor="middle">μPD7261（ハードディスクの</text>
+<text x="1150.0" y="366" font-size="12" text-anchor="middle">コントローラ。MFM）</text>
+<text x="1150.0" y="383" font-size="12" text-anchor="middle"></text>
+<text x="1150.0" y="400" font-size="12" text-anchor="middle">HMC-504（役目は未確認）</text>
+<text x="1150.0" y="417" font-size="12" text-anchor="middle"></text>
+<text x="1150.0" y="434" font-size="12" text-anchor="middle">BS6-01（6 回路の DIP）</text>
+<line x1="970" y1="420" x2="1000" y2="420" stroke="#333" stroke-width="3" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="1340" y="120" width="290" height="260" rx="4" fill="#9fdfa8" stroke="#333" stroke-width="1.5"/>
+<text x="1485.0" y="140" font-size="14" font-weight="bold" text-anchor="middle">ST-506 の制御（34 ピン）</text>
+<text x="1348" y="162" font-size="12">デイジーチェーン（DS で選ぶ）</text>
+<text x="1348" y="179" font-size="12">[推測] コントローラの J1 [/推測]</text>
+<text x="1348" y="196" font-size="12">→ STEP、DIRECTION IN</text>
+<text x="1348" y="213" font-size="12">→ ヘッドの選択 2^0、2^1</text>
+<text x="1348" y="230" font-size="12">→ WRITE GATE</text>
+<text x="1348" y="247" font-size="12">→ DRIVE SELECT 1〜4</text>
+<text x="1348" y="264" font-size="12">← READY、SEEK COMPLETE</text>
+<text x="1348" y="281" font-size="12">← TRACK 0、WRITE FAULT</text>
+<text x="1348" y="298" font-size="12">← INDEX</text>
+<text x="1348" y="315" font-size="12">（L で有効。7438 / 220・330 Ω）</text>
+<rect x="1340" y="400" width="290" height="240" rx="4" fill="#9fdfa8" stroke="#333" stroke-width="1.5"/>
+<text x="1485.0" y="420" font-size="14" font-weight="bold" text-anchor="middle">ST-506 のデータ（20 ピン）</text>
+<text x="1348" y="442" font-size="12">内蔵と J7 で共通。[推測] J3 [/推測]</text>
+<text x="1348" y="459" font-size="12">→ ±WRITE DATA</text>
+<text x="1348" y="476" font-size="12">← ±READ DATA</text>
+<text x="1348" y="493" font-size="12">（RS-422 の差動、MFM、5 Mbit/s）</text>
+<line x1="1300" y1="250" x2="1340" y2="250" stroke="#333" stroke-width="3" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="1300" y1="520" x2="1340" y2="520" stroke="#333" stroke-width="3" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="1700" y="120" width="290" height="150" rx="6" fill="#eeeeee" stroke="#333" stroke-width="1.5"/>
+<text x="1845.0" y="142" font-size="15" font-weight="bold" text-anchor="middle">ドライブ NEC D3126</text>
+<text x="1845.0" y="162" font-size="12" text-anchor="middle">615 × 4、20 MB、3564 rpm</text>
+<text x="1845.0" y="179" font-size="12" text-anchor="middle">DS1、終端あり（ケーブルの端）</text>
+<line x1="1630" y1="250" x2="1660" y2="250" stroke="#2e7d32" stroke-width="6"/>
+<line x1="1660" y1="192" x2="1660" y2="523" stroke="#2e7d32" stroke-width="6"/>
+<line x1="1630" y1="520" x2="1660" y2="520" stroke="#2e7d32" stroke-width="6"/>
+<text x="1670" y="358" font-size="12" fill="#2e7d32" transform="rotate(90 1670 358)" text-anchor="middle">ST-506 のバス（制御とデータ、1 組）</text>
+<line x1="1660" y1="195" x2="1700" y2="195" stroke="#333" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="1660" y1="465" x2="1700" y2="465" stroke="#333" stroke-width="2" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="1700" y="290" width="290" height="350" rx="4" fill="#e0e0e0" stroke="#333" stroke-width="1.5"/>
+<text x="1845.0" y="310" font-size="14" font-weight="bold" text-anchor="middle">J7（アンフェノール 50 ピン）</text>
+<text x="1708" y="332" font-size="12">= 固定ディスク用コネクタ 1</text>
+<text x="1708" y="349" font-size="12">（本体の背面から外へ出る）</text>
+<text x="1708" y="366" font-size="12">内蔵のドライブと同じ ST-506 のバス</text>
+<text x="1708" y="383" font-size="12">（制御とデータ）を 1 本にまとめて外へ出す。</text>
+<text x="1708" y="400" font-size="12">2 台目のドライブ（外付け）は DS で選ぶ。</text>
+<text x="1708" y="417" font-size="12">SASI ではない</text>
+<text x="1708" y="434" font-size="12"></text>
+<text x="1708" y="451" font-size="12">+WD / −WD、+RD / −RD、HS0〜HS2、</text>
+<text x="1708" y="468" font-size="12">WGT、SKC、TRO、FLT、IDX、RDY、</text>
+<text x="1708" y="485" font-size="12">STP、DIR、DS1〜DS4、DSD、+5 V、GND</text>
+<text x="1708" y="502" font-size="12"></text>
+<text x="1708" y="519" font-size="12">バスは 1 組（見立て。導通は未確認）</text>
+<text x="1708" y="536" font-size="12">PC-9801-27 の「固定ディスク用コネクタ 2」は</text>
+<text x="1708" y="553" font-size="12">同じ形で中身は SASI。取り違えに注意</text>
+<text x="30" y="676" font-size="12" fill="#333">出どころ: findings の 2 章（UX-31 の構成、ホストアダプタの論理、コントローラのファームウェア）、cbide_design.md の UX のハードディスクユニットの節（ハードウェアマニュアル [5] の 2.5 節）、ST506/ST412 OEM Manual [88]。</text>
+</svg>

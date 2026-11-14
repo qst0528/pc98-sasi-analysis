@@ -1,0 +1,728 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1620" height="1360" viewBox="0 0 1620 1360" font-family="sans-serif">
+<rect width="1620" height="1360" fill="#ffffff"/>
+<text x="30" y="34" font-size="20" font-weight="bold" text-anchor="start" fill="#000">PC-9801UX-31 ホストアダプタの集合抵抗の足の行き先（導通で全ピンを確認、2026-10-25）</text>
+<text x="30" y="58" font-size="12" text-anchor="start" fill="#333">○ の数字は集合抵抗のピン番号（1 番が印の側）。⏚ は終端型の 8 番ピン（GND）につながる。行き先の色: 緑 = C バス（P2）、オレンジ = SASI の制御（P1）、紫 = SASI のデータ、青 = ボードの中、灰 = どこにもつながらない。</text>
+<text x="30" y="100" font-size="15" font-weight="bold" text-anchor="start" fill="#000">1A1</text>
+<text x="76" y="100" font-size="12" text-anchor="start" fill="#333">終端 RN310（220 Ω / 330 Ω の組と見る。測定 137.6 Ω）</text>
+<path d="M44,122 L368,122" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<text x="40" y="117" font-size="11" text-anchor="start" fill="#c00000">+5V</text>
+<path d="M44,122 L44,271" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<circle cx="44" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="44" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">1</text>
+<path d="M44,289 L44,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="48" y="300" font-size="11" text-anchor="end" fill="#c00000" transform="rotate(-90 48 300)">+5V</text>
+<path d="M98,122 L98,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="93" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M98,169.5 L98,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M98,195 L98,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="93" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M98,232.0 L98,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M98,247 L98,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M90,253 L106,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M93,256 L103,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M96,259 L100,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="98" cy="195" r="2.5" fill="#000"/>
+<path d="M98,195 L114,195 L114,274 L105,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="98" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="98" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">2</text>
+<path d="M98,289 L98,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="102" y="300" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 102 300)">P1-2 DT0#</text>
+<path d="M152,122 L152,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="147" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M152,169.5 L152,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M152,195 L152,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="147" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M152,232.0 L152,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M152,247 L152,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M144,253 L160,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M147,256 L157,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M150,259 L154,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="152" cy="195" r="2.5" fill="#000"/>
+<path d="M152,195 L168,195 L168,274 L159,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="152" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="152" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">3</text>
+<path d="M152,289 L152,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="156" y="300" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 156 300)">P1-4 DT1#</text>
+<path d="M206,122 L206,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="201" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M206,169.5 L206,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M206,195 L206,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="201" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M206,232.0 L206,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M206,247 L206,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M198,253 L214,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M201,256 L211,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M204,259 L208,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="206" cy="195" r="2.5" fill="#000"/>
+<path d="M206,195 L222,195 L222,274 L213,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="206" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="206" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">4</text>
+<path d="M206,289 L206,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="210" y="300" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 210 300)">P1-6 DT2#</text>
+<path d="M260,122 L260,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="255" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M260,169.5 L260,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M260,195 L260,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="255" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M260,232.0 L260,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M260,247 L260,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M252,253 L268,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M255,256 L265,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M258,259 L262,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="260" cy="195" r="2.5" fill="#000"/>
+<path d="M260,195 L276,195 L276,274 L267,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="260" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="260" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">5</text>
+<path d="M260,289 L260,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="264" y="300" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 264 300)">P1-8 DT3#</text>
+<path d="M314,122 L314,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="309" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M314,169.5 L314,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M314,195 L314,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="309" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M314,232.0 L314,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M314,247 L314,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M306,253 L322,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M309,256 L319,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M312,259 L316,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="314" cy="195" r="2.5" fill="#000"/>
+<path d="M314,195 L330,195 L330,274 L321,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="314" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="314" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">6</text>
+<path d="M314,289 L314,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="318" y="300" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 318 300)">P1-10 DT4#</text>
+<path d="M368,122 L368,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="363" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M368,169.5 L368,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M368,195 L368,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="363" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M368,232.0 L368,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M368,247 L368,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M360,253 L376,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M363,256 L373,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M366,259 L370,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="368" cy="195" r="2.5" fill="#000"/>
+<path d="M368,195 L384,195 L384,274 L375,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="368" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="368" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">7</text>
+<path d="M368,289 L368,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="372" y="300" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 372 300)">P1-12 DT5#</text>
+<path d="M422,271 L422,240" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M422,240 L422,246" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M414,246 L430,246" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M417,249 L427,249" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M420,252 L424,252" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="422" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="422" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">8</text>
+<path d="M422,289 L422,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="426" y="300" font-size="11" text-anchor="end" fill="#000" transform="rotate(-90 426 300)">GND</text>
+<text x="560" y="100" font-size="15" font-weight="bold" text-anchor="start" fill="#000">1A2</text>
+<text x="606" y="100" font-size="12" text-anchor="start" fill="#333">終端 RN310（220 Ω / 330 Ω の組と見る）</text>
+<path d="M574,122 L898,122" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<text x="570" y="117" font-size="11" text-anchor="start" fill="#c00000">+5V</text>
+<path d="M574,122 L574,271" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<circle cx="574" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="574" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">1</text>
+<path d="M574,289 L574,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="578" y="300" font-size="11" text-anchor="end" fill="#c00000" transform="rotate(-90 578 300)">+5V</text>
+<path d="M628,122 L628,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="623" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M628,169.5 L628,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M628,195 L628,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="623" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M628,232.0 L628,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M628,247 L628,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M620,253 L636,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M623,256 L633,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M626,259 L630,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="628" cy="195" r="2.5" fill="#000"/>
+<path d="M628,195 L644,195 L644,274 L635,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="628" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="628" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">2</text>
+<path d="M628,289 L628,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="632" y="300" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 632 300)">P1-14 DT6#</text>
+<path d="M682,122 L682,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="677" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M682,169.5 L682,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M682,195 L682,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="677" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M682,232.0 L682,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M682,247 L682,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M674,253 L690,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M677,256 L687,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M680,259 L684,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="682" cy="195" r="2.5" fill="#000"/>
+<path d="M682,195 L698,195 L698,274 L689,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="682" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="682" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">3</text>
+<path d="M682,289 L682,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="686" y="300" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 686 300)">P1-16 DT7#</text>
+<path d="M736,122 L736,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="731" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M736,169.5 L736,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M736,195 L736,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="731" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M736,232.0 L736,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M736,247 L736,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M728,253 L744,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M731,256 L741,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M734,259 L738,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="736" cy="195" r="2.5" fill="#000"/>
+<path d="M736,195 L752,195 L752,274 L743,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="736" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="736" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">4</text>
+<path d="M736,289 L736,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="740" y="300" font-size="11" text-anchor="end" fill="#888888" transform="rotate(-90 740 300)">NC</text>
+<path d="M790,122 L790,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="785" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M790,169.5 L790,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M790,195 L790,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="785" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M790,232.0 L790,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M790,247 L790,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M782,253 L798,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M785,256 L795,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M788,259 L792,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="790" cy="195" r="2.5" fill="#000"/>
+<path d="M790,195 L806,195 L806,274 L797,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="790" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="790" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">5</text>
+<path d="M790,289 L790,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="794" y="300" font-size="11" text-anchor="end" fill="#888888" transform="rotate(-90 794 300)">NC</text>
+<path d="M844,122 L844,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="839" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M844,169.5 L844,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M844,195 L844,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="839" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M844,232.0 L844,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M844,247 L844,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M836,253 L852,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M839,256 L849,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M842,259 L846,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="844" cy="195" r="2.5" fill="#000"/>
+<path d="M844,195 L860,195 L860,274 L851,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="844" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="844" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">6</text>
+<path d="M844,289 L844,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="848" y="300" font-size="11" text-anchor="end" fill="#c2410c" transform="rotate(-90 848 300)">P1-36 BSY#</text>
+<path d="M898,122 L898,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="893" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M898,169.5 L898,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M898,195 L898,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="893" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M898,232.0 L898,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M898,247 L898,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M890,253 L906,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M893,256 L903,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M896,259 L900,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="898" cy="195" r="2.5" fill="#000"/>
+<path d="M898,195 L914,195 L914,274 L905,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="898" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="898" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">7</text>
+<path d="M898,289 L898,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="902" y="300" font-size="11" text-anchor="end" fill="#c2410c" transform="rotate(-90 902 300)">P1-38 ACK#</text>
+<path d="M952,271 L952,240" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M952,240 L952,246" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M944,246 L960,246" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M947,249 L957,249" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M950,252 L954,252" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="952" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="952" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">8</text>
+<path d="M952,289 L952,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="956" y="300" font-size="11" text-anchor="end" fill="#000" transform="rotate(-90 956 300)">GND</text>
+<text x="1090" y="100" font-size="15" font-weight="bold" text-anchor="start" fill="#000">1B1</text>
+<text x="1136" y="100" font-size="12" text-anchor="start" fill="#333">終端 RN310（220 Ω / 330 Ω の組と見る）</text>
+<path d="M1104,122 L1428,122" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<text x="1100" y="117" font-size="11" text-anchor="start" fill="#c00000">+5V</text>
+<path d="M1104,122 L1104,271" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<circle cx="1104" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1104" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">1</text>
+<path d="M1104,289 L1104,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1108" y="300" font-size="11" text-anchor="end" fill="#c00000" transform="rotate(-90 1108 300)">+5V</text>
+<path d="M1158,122 L1158,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1153" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1158,169.5 L1158,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1158,195 L1158,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1153" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1158,232.0 L1158,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1158,247 L1158,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1150,253 L1166,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1153,256 L1163,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1156,259 L1160,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1158" cy="195" r="2.5" fill="#000"/>
+<path d="M1158,195 L1174,195 L1174,274 L1165,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1158" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1158" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">2</text>
+<path d="M1158,289 L1158,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1162" y="300" font-size="11" text-anchor="end" fill="#c2410c" transform="rotate(-90 1162 300)">P1-40 RST#</text>
+<path d="M1212,122 L1212,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1207" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1212,169.5 L1212,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1212,195 L1212,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1207" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1212,232.0 L1212,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1212,247 L1212,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1204,253 L1220,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1207,256 L1217,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1210,259 L1214,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1212" cy="195" r="2.5" fill="#000"/>
+<path d="M1212,195 L1228,195 L1228,274 L1219,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1212" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1212" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">3</text>
+<path d="M1212,289 L1212,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1216" y="300" font-size="11" text-anchor="end" fill="#c2410c" transform="rotate(-90 1216 300)">P1-42 MSG#</text>
+<path d="M1266,122 L1266,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1261" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1266,169.5 L1266,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1266,195 L1266,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1261" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1266,232.0 L1266,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1266,247 L1266,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1258,253 L1274,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1261,256 L1271,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1264,259 L1268,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1266" cy="195" r="2.5" fill="#000"/>
+<path d="M1266,195 L1282,195 L1282,274 L1273,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1266" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1266" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">4</text>
+<path d="M1266,289 L1266,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1270" y="300" font-size="11" text-anchor="end" fill="#c2410c" transform="rotate(-90 1270 300)">P1-44 SEL#</text>
+<path d="M1320,122 L1320,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1315" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1320,169.5 L1320,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1320,195 L1320,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1315" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1320,232.0 L1320,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1320,247 L1320,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1312,253 L1328,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1315,256 L1325,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1318,259 L1322,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1320" cy="195" r="2.5" fill="#000"/>
+<path d="M1320,195 L1336,195 L1336,274 L1327,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1320" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1320" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">5</text>
+<path d="M1320,289 L1320,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1324" y="300" font-size="11" text-anchor="end" fill="#c2410c" transform="rotate(-90 1324 300)">P1-46 C#/D</text>
+<path d="M1374,122 L1374,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1369" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1374,169.5 L1374,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1374,195 L1374,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1369" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1374,232.0 L1374,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1374,247 L1374,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1366,253 L1382,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1369,256 L1379,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1372,259 L1376,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1374" cy="195" r="2.5" fill="#000"/>
+<path d="M1374,195 L1390,195 L1390,274 L1381,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1374" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1374" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">6</text>
+<path d="M1374,289 L1374,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1378" y="300" font-size="11" text-anchor="end" fill="#c2410c" transform="rotate(-90 1378 300)">P1-48 REQ#</text>
+<path d="M1428,122 L1428,147.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1423" y="147.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1428,169.5 L1428,195" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1428,195 L1428,210.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1423" y="210.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1428,232.0 L1428,247" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1428,247 L1428,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1420,253 L1436,253" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1423,256 L1433,256" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1426,259 L1430,259" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1428" cy="195" r="2.5" fill="#000"/>
+<path d="M1428,195 L1444,195 L1444,274 L1435,274" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1428" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1428" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">7</text>
+<path d="M1428,289 L1428,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1432" y="300" font-size="11" text-anchor="end" fill="#c2410c" transform="rotate(-90 1432 300)">P1-50 I#/O</text>
+<path d="M1482,271 L1482,240" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1482,240 L1482,246" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1474,246 L1490,246" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1477,249 L1487,249" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M1480,252 L1484,252" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1482" cy="280" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1482" y="284" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">8</text>
+<path d="M1482,289 L1482,296" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1486" y="300" font-size="11" text-anchor="end" fill="#000" transform="rotate(-90 1486 300)">GND</text>
+<text x="30" y="510" font-size="15" font-weight="bold" text-anchor="start" fill="#000">7B1</text>
+<text x="76" y="510" font-size="12" text-anchor="start" fill="#333">分圧型（約 620 Ω で +5 V、約 1.5 kΩ で GND と見る）</text>
+<path d="M44,532 L368,532" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<text x="40" y="527" font-size="11" text-anchor="start" fill="#c00000">+5V</text>
+<path d="M44,532 L44,681" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<circle cx="44" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="44" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">1</text>
+<path d="M44,699 L44,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="48" y="710" font-size="11" text-anchor="end" fill="#c00000" transform="rotate(-90 48 710)">+5V</text>
+<path d="M98,532 L98,557.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="93" y="557.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M98,579.5 L98,605" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M98,605 L98,620.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="93" y="620.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M98,642.0 L98,657" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M98,657 L98,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M90,663 L106,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M93,666 L103,666" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M96,669 L100,669" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="98" cy="605" r="2.5" fill="#000"/>
+<path d="M98,605 L114,605 L114,684 L105,684" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="98" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="98" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">2</text>
+<path d="M98,699 L98,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="102" y="710" font-size="11" text-anchor="end" fill="#167a2e" transform="rotate(-90 102 710)">8A の 8 → IR9（P2-37）</text>
+<path d="M152,532 L152,557.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="147" y="557.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M152,579.5 L152,605" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M152,605 L152,620.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="147" y="620.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M152,642.0 L152,657" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M152,657 L152,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M144,663 L160,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M147,666 L157,666" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M150,669 L154,669" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="152" cy="605" r="2.5" fill="#000"/>
+<path d="M152,605 L168,605 L168,684 L159,684" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="152" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="152" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">3</text>
+<path d="M152,699 L152,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="156" y="710" font-size="11" text-anchor="end" fill="#167a2e" transform="rotate(-90 156 710)">8A の 11 → DRQ0（P2-15）</text>
+<path d="M206,532 L206,557.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="201" y="557.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M206,579.5 L206,605" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M206,605 L206,620.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="201" y="620.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M206,642.0 L206,657" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M206,657 L206,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M198,663 L214,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M201,666 L211,666" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M204,669 L208,669" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="206" cy="605" r="2.5" fill="#000"/>
+<path d="M206,605 L222,605 L222,684 L213,684" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="206" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="206" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">4</text>
+<path d="M206,699 L206,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="210" y="710" font-size="11" text-anchor="end" fill="#888888" transform="rotate(-90 210 710)">NC</text>
+<path d="M260,532 L260,557.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="255" y="557.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M260,579.5 L260,605" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M260,605 L260,620.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="255" y="620.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M260,642.0 L260,657" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M260,657 L260,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M252,663 L268,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M255,666 L265,666" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M258,669 L262,669" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="260" cy="605" r="2.5" fill="#000"/>
+<path d="M260,605 L276,605 L276,684 L267,684" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="260" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="260" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">5</text>
+<path d="M260,699 L260,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="264" y="710" font-size="11" text-anchor="end" fill="#888888" transform="rotate(-90 264 710)">NC</text>
+<path d="M314,532 L314,557.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="309" y="557.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M314,579.5 L314,605" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M314,605 L314,620.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="309" y="620.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M314,642.0 L314,657" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M314,657 L314,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M306,663 L322,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M309,666 L319,666" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M312,669 L316,669" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="314" cy="605" r="2.5" fill="#000"/>
+<path d="M314,605 L330,605 L330,684 L321,684" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="314" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="314" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">6</text>
+<path d="M314,699 L314,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="318" y="710" font-size="11" text-anchor="end" fill="#888888" transform="rotate(-90 318 710)">NC</text>
+<path d="M368,532 L368,557.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="363" y="557.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M368,579.5 L368,605" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M368,605 L368,620.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="363" y="620.0" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M368,642.0 L368,657" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M368,657 L368,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M360,663 L376,663" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M363,666 L373,666" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M366,669 L370,669" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="368" cy="605" r="2.5" fill="#000"/>
+<path d="M368,605 L384,605 L384,684 L375,684" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="368" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="368" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">7</text>
+<path d="M368,699 L368,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="372" y="710" font-size="11" text-anchor="end" fill="#888888" transform="rotate(-90 372 710)">NC</text>
+<path d="M422,681 L422,650" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M422,650 L422,656" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M414,656 L430,656" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M417,659 L427,659" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M420,662 L424,662" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="422" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="422" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">8</text>
+<path d="M422,699 L422,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="426" y="710" font-size="11" text-anchor="end" fill="#000" transform="rotate(-90 426 710)">GND</text>
+<text x="560" y="510" font-size="15" font-weight="bold" text-anchor="start" fill="#000">1A3</text>
+<text x="606" y="510" font-size="12" text-anchor="start" fill="#333">10 kΩ × 8（共通 = 1 番）。受信のバッファ（3B）の出力 = IDR の D</text>
+<path d="M574,532 L1006,532" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<text x="570" y="527" font-size="11" text-anchor="start" fill="#c00000">+5V</text>
+<path d="M574,532 L574,681" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<circle cx="574" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="574" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">1</text>
+<path d="M574,699 L574,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="578" y="710" font-size="11" text-anchor="end" fill="#c00000" transform="rotate(-90 578 710)">+5V</text>
+<path d="M628,532 L628,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="623" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M628,617.5 L628,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="628" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="628" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">2</text>
+<path d="M628,699 L628,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="632" y="710" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 632 710)">3B の 18 → DTIN7</text>
+<path d="M682,532 L682,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="677" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M682,617.5 L682,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="682" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="682" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">3</text>
+<path d="M682,699 L682,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="686" y="710" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 686 710)">3B の 3 → DTIN0</text>
+<path d="M736,532 L736,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="731" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M736,617.5 L736,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="736" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="736" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">4</text>
+<path d="M736,699 L736,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="740" y="710" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 740 710)">3B の 16 → DTIN6</text>
+<path d="M790,532 L790,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="785" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M790,617.5 L790,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="790" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="790" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">5</text>
+<path d="M790,699 L790,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="794" y="710" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 794 710)">3B の 5 → DTIN1</text>
+<path d="M844,532 L844,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="839" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M844,617.5 L844,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="844" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="844" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">6</text>
+<path d="M844,699 L844,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="848" y="710" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 848 710)">3B の 14 → DTIN5</text>
+<path d="M898,532 L898,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="893" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M898,617.5 L898,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="898" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="898" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">7</text>
+<path d="M898,699 L898,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="902" y="710" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 902 710)">3B の 7 → DTIN2</text>
+<path d="M952,532 L952,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="947" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M952,617.5 L952,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="952" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="952" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">8</text>
+<path d="M952,699 L952,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="956" y="710" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 956 710)">3B の 12 → DTIN4</text>
+<path d="M1006,532 L1006,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1001" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1006,617.5 L1006,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1006" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1006" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">9</text>
+<path d="M1006,699 L1006,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1010" y="710" font-size="11" text-anchor="end" fill="#8a2be2" transform="rotate(-90 1010 710)">3B の 9 → DTIN3</text>
+<text x="1090" y="510" font-size="15" font-weight="bold" text-anchor="start" fill="#000">6B2</text>
+<text x="1136" y="510" font-size="12" text-anchor="start" fill="#333">10 kΩ × 8。74LS245（11C）の B 側 = 内部バス</text>
+<path d="M1104,532 L1536,532" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<text x="1100" y="527" font-size="11" text-anchor="start" fill="#c00000">+5V</text>
+<path d="M1104,532 L1104,681" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<circle cx="1104" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1104" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">1</text>
+<path d="M1104,699 L1104,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1108" y="710" font-size="11" text-anchor="end" fill="#c00000" transform="rotate(-90 1108 710)">+5V</text>
+<path d="M1158,532 L1158,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1153" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1158,617.5 L1158,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1158" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1158" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">2</text>
+<path d="M1158,699 L1158,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1162" y="710" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 1162 710)">11C の 14（B5 = IB3）</text>
+<path d="M1212,532 L1212,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1207" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1212,617.5 L1212,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1212" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1212" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">3</text>
+<path d="M1212,699 L1212,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1216" y="710" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 1216 710)">11C の 15（B4 = IB4）</text>
+<path d="M1266,532 L1266,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1261" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1266,617.5 L1266,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1266" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1266" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">4</text>
+<path d="M1266,699 L1266,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1270" y="710" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 1270 710)">11C の 18（B1 = IB7）</text>
+<path d="M1320,532 L1320,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1315" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1320,617.5 L1320,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1320" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1320" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">5</text>
+<path d="M1320,699 L1320,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1324" y="710" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 1324 710)">11C の 16（B3 = IB5）</text>
+<path d="M1374,532 L1374,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1369" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1374,617.5 L1374,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1374" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1374" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">6</text>
+<path d="M1374,699 L1374,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1378" y="710" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 1378 710)">11C の 12（B7 = IB1）</text>
+<path d="M1428,532 L1428,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1423" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1428,617.5 L1428,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1428" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1428" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">7</text>
+<path d="M1428,699 L1428,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1432" y="710" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 1432 710)">11C の 13（B6 = IB2）</text>
+<path d="M1482,532 L1482,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1477" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1482,617.5 L1482,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1482" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1482" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">8</text>
+<path d="M1482,699 L1482,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1486" y="710" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 1486 710)">11C の 17（B2 = IB6）</text>
+<path d="M1536,532 L1536,595.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1531" y="595.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1536,617.5 L1536,681" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1536" cy="690" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1536" y="694" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">9</text>
+<path d="M1536,699 L1536,706" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1540" y="710" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 1540 710)">11C の 11（B8 = IB0）</text>
+<text x="30" y="920" font-size="15" font-weight="bold" text-anchor="start" fill="#000">6B1</text>
+<text x="76" y="920" font-size="12" text-anchor="start" fill="#333">10 kΩ × 8。SW1（閉 = 0）</text>
+<path d="M44,942 L476,942" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<text x="40" y="937" font-size="11" text-anchor="start" fill="#c00000">+5V</text>
+<path d="M44,942 L44,1091" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<circle cx="44" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="44" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">1</text>
+<path d="M44,1109 L44,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="48" y="1120" font-size="11" text-anchor="end" fill="#c00000" transform="rotate(-90 48 1120)">+5V</text>
+<path d="M98,942 L98,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="93" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M98,1027.5 L98,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="98" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="98" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">2</text>
+<path d="M98,1109 L98,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="102" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 102 1120)">SW1 の 8 番（82h の bit0）</text>
+<path d="M152,942 L152,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="147" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M152,1027.5 L152,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="152" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="152" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">3</text>
+<path d="M152,1109 L152,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="156" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 156 1120)">SW1 の 7 番（82h の bit1）</text>
+<path d="M206,942 L206,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="201" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M206,1027.5 L206,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="206" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="206" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">4</text>
+<path d="M206,1109 L206,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="210" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 210 1120)">SW1 の 6 番（82h の bit2）</text>
+<path d="M260,942 L260,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="255" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M260,1027.5 L260,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="260" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="260" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">5</text>
+<path d="M260,1109 L260,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="264" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 264 1120)">SW1 の 5 番（82h の bit3）</text>
+<path d="M314,942 L314,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="309" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M314,1027.5 L314,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="314" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="314" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">6</text>
+<path d="M314,1109 L314,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="318" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 318 1120)">SW1 の 4 番（82h の bit4）</text>
+<path d="M368,942 L368,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="363" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M368,1027.5 L368,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="368" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="368" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">7</text>
+<path d="M368,1109 L368,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="372" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 372 1120)">SW1 の 3 番（82h の bit5）</text>
+<path d="M422,942 L422,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="417" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M422,1027.5 L422,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="422" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="422" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">8</text>
+<path d="M422,1109 L422,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="426" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 426 1120)">SW1 の 2 番（82h の bit6）</text>
+<path d="M476,942 L476,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="471" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M476,1027.5 L476,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="476" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="476" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">9</text>
+<path d="M476,1109 L476,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="480" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 480 1120)">SW1 の 1 番（82h の bit7）</text>
+<text x="560" y="920" font-size="15" font-weight="bold" text-anchor="start" fill="#000">4C1</text>
+<text x="606" y="920" font-size="12" text-anchor="start" fill="#333">10 kΩ × 8。そのほかのプルアップ</text>
+<path d="M574,942 L1006,942" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<text x="570" y="937" font-size="11" text-anchor="start" fill="#c00000">+5V</text>
+<path d="M574,942 L574,1091" fill="none" stroke="#c00000" stroke-width="1.6"/>
+<circle cx="574" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="574" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">1</text>
+<path d="M574,1109 L574,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="578" y="1120" font-size="11" text-anchor="end" fill="#c00000" transform="rotate(-90 578 1120)">+5V</text>
+<path d="M628,942 L628,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="623" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M628,1027.5 L628,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="628" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="628" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">2</text>
+<path d="M628,1109 L628,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="632" y="1120" font-size="11" text-anchor="end" fill="#888888" transform="rotate(-90 632 1120)">NC</text>
+<path d="M682,942 L682,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="677" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M682,1027.5 L682,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="682" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="682" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">3</text>
+<path d="M682,1109 L682,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="686" y="1120" font-size="11" text-anchor="end" fill="#c2410c" transform="rotate(-90 686 1120)">P1-24（HD LED、7407 へ）</text>
+<path d="M736,942 L736,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="731" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M736,1027.5 L736,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="736" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="736" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">4</text>
+<path d="M736,1109 L736,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="740" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 740 1120)">5C の 1/4/10（7438 の片側）</text>
+<path d="M790,942 L790,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="785" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M790,1027.5 L790,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="790" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="790" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">5</text>
+<path d="M790,1109 L790,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="794" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 794 1120)">4A の 4/10、4B の 4（PR）</text>
+<path d="M844,942 L844,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="839" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M844,1027.5 L844,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="844" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="844" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">6</text>
+<path d="M844,1109 L844,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="848" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 848 1120)">9A の 4/10（PR）</text>
+<path d="M898,942 L898,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="893" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M898,1027.5 L898,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="898" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="898" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">7</text>
+<path d="M898,1109 L898,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="902" y="1120" font-size="11" text-anchor="end" fill="#888888" transform="rotate(-90 902 1120)">NC</text>
+<path d="M952,942 L952,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="947" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M952,1027.5 L952,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="952" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="952" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">8</text>
+<path d="M952,1109 L952,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="956" y="1120" font-size="11" text-anchor="end" fill="#0040a0" transform="rotate(-90 956 1120)">7C の 13（82h の bit1 = 1）</text>
+<path d="M1006,942 L1006,1005.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<rect x="1001" y="1005.5" width="10" height="22" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M1006,1027.5 L1006,1091" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1006" cy="1100" r="9" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1006" y="1104" font-size="11" font-weight="bold" text-anchor="middle" fill="#000">9</text>
+<path d="M1006,1109 L1006,1116" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1010" y="1120" font-size="11" text-anchor="end" fill="#888888" transform="rotate(-90 1010 1120)">NC</text>
+<text x="1090" y="920" font-size="14" font-weight="bold" text-anchor="start" fill="#000">まとめ</text>
+<text x="1090" y="940" font-size="12" text-anchor="start" fill="#333">SASI の 16 本は、ホスト側でも 1A1、1A2、1B1 で終端されている</text>
+<text x="1090" y="960" font-size="12" text-anchor="start" fill="#333">（コントローラ側と合わせて両端で終端）。</text>
+<text x="1090" y="980" font-size="12" text-anchor="start" fill="#333">IR9 と DRQ0 は 7B1 の分圧で、離したとき約 3.5 V。</text>
+<text x="1090" y="1000" font-size="12" text-anchor="start" fill="#333">プルアップは 1A3、6B1、6B2、4C1 の 32 本（4C1 は 3 本が NC）。</text>
+<text x="1090" y="1020" font-size="12" text-anchor="start" fill="#333">IB0〜7 = DB0〜7（74LS245 の B8〜B1）。</text>
+<text x="1090" y="1040" font-size="12" text-anchor="start" fill="#333">DTIN0〜7 は 74LS240（3B）で受けた SASI のデータ。</text>
+</svg>

@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1010" viewBox="0 0 1500 1010" font-family="sans-serif">
+<rect width="1500" height="1010" fill="#ffffff"/>
+<text x="20" y="30" font-size="17" font-weight="bold" text-anchor="start" fill="#000">PC-9801-27: BIOS ROM の選択と読み出し（導通で確認、2026-10-29。解析結果（findings）の「PC-9801-27 の SASI BIOS」の「ROM の選択」を図にしたもの）</text>
+<text x="20" y="52" font-size="12" text-anchor="start" fill="#333">ROM のまわりだけを描く（SASI 側はまだ調べていない）。名前の後ろの # は L で有効（負論理）。C-bus の信号は末尾の 0 が負論理。○ は反転。色の付いた名前は、同じ名前どうしがつながるネット。灰色の文字は IC の位置とピン番号。</text>
+<rect x="20" y="62" width="12" height="12" fill="#167a2e"/>
+<text x="36" y="72" font-size="12" text-anchor="start" fill="#167a2e">C バスの信号（括弧はピン）</text>
+<rect x="250" y="62" width="12" height="12" fill="#0040a0"/>
+<text x="266" y="72" font-size="12" text-anchor="start" fill="#0040a0">ボードの中だけで使う信号</text>
+<rect x="470" y="62" width="12" height="12" fill="#c2410c"/>
+<text x="486" y="72" font-size="12" text-anchor="start" fill="#c2410c">SW2、SW3 と、固定の 0 / 1</text>
+<rect x="700" y="62" width="12" height="12" fill="#888888"/>
+<text x="716" y="72" font-size="12" text-anchor="start" fill="#888888">行き先をまだ調べていない線</text>
+<rect x="10" y="90" width="760" height="470" rx="8" fill="#eef4ff" stroke="#bbb"/>
+<text x="20" y="110" font-size="14" font-weight="bold" text-anchor="start" fill="#000">1. 窓の番地の比較（74LS682 5A）</text>
+<rect x="270" y="125" width="180" height="330" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="360.0" y="141" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">74LS682</text>
+<text x="360.0" y="121" font-size="9" text-anchor="middle" fill="#666">5A（Q の入力に 20 kΩ のプルアップ）</text>
+<path d="M240,165 L270,165" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="274" y="169" font-size="10" text-anchor="start" fill="#000">P0（2）</text>
+<text x="237" y="169" font-size="11" text-anchor="end" fill="#c2410c">Y（SW3 の 5、6 番）</text>
+<path d="M450,165 L480,165" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="446" y="169" font-size="10" text-anchor="end" fill="#000">Q0（3）</text>
+<text x="483" y="169" font-size="11" text-anchor="start" fill="#c2410c">X（SW3 の 1、2 番）</text>
+<path d="M240,199 L270,199" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="274" y="203" font-size="10" text-anchor="start" fill="#000">P1（4）</text>
+<text x="237" y="203" font-size="11" text-anchor="end" fill="#167a2e">AB13（A18）</text>
+<path d="M450,199 L480,199" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="446" y="203" font-size="10" text-anchor="end" fill="#000">Q1（5）</text>
+<text x="483" y="203" font-size="11" text-anchor="start" fill="#c2410c">SW2-8（O = 1）</text>
+<path d="M240,233 L270,233" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="274" y="237" font-size="10" text-anchor="start" fill="#000">P2（6）</text>
+<text x="237" y="237" font-size="11" text-anchor="end" fill="#167a2e">AB14（A19）</text>
+<path d="M450,233 L480,233" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="446" y="237" font-size="10" text-anchor="end" fill="#000">Q2（7）</text>
+<text x="483" y="237" font-size="11" text-anchor="start" fill="#c2410c">SW2-7（O = 1）</text>
+<path d="M240,267 L270,267" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="274" y="271" font-size="10" text-anchor="start" fill="#000">P3（8）</text>
+<text x="237" y="271" font-size="11" text-anchor="end" fill="#167a2e">AB15（A20）</text>
+<path d="M450,267 L480,267" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="446" y="271" font-size="10" text-anchor="end" fill="#000">Q3（9）</text>
+<text x="483" y="271" font-size="11" text-anchor="start" fill="#c2410c">SW2-6（X = 0）</text>
+<path d="M240,301 L270,301" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="274" y="305" font-size="10" text-anchor="start" fill="#000">P4（11）</text>
+<text x="237" y="305" font-size="11" text-anchor="end" fill="#167a2e">AB16（A22）</text>
+<path d="M450,301 L480,301" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="446" y="305" font-size="10" text-anchor="end" fill="#000">Q4（12）</text>
+<text x="483" y="305" font-size="11" text-anchor="start" fill="#c2410c">SW2-5（O = 1）</text>
+<path d="M240,335 L270,335" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="274" y="339" font-size="10" text-anchor="start" fill="#000">P5（13）</text>
+<text x="237" y="339" font-size="11" text-anchor="end" fill="#167a2e">AB17（A23）</text>
+<path d="M450,335 L480,335" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="446" y="339" font-size="10" text-anchor="end" fill="#000">Q5（14）</text>
+<text x="483" y="339" font-size="11" text-anchor="start" fill="#c2410c">SW2-4（X = 0）</text>
+<path d="M240,369 L270,369" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="274" y="373" font-size="10" text-anchor="start" fill="#000">P6（15）</text>
+<text x="237" y="373" font-size="11" text-anchor="end" fill="#167a2e">AB18（A24）</text>
+<path d="M450,369 L480,369" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="446" y="373" font-size="10" text-anchor="end" fill="#000">Q6（16）</text>
+<text x="483" y="373" font-size="11" text-anchor="start" fill="#c2410c">+5 V（1 に固定）</text>
+<path d="M240,403 L270,403" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="274" y="407" font-size="10" text-anchor="start" fill="#000">P7（17）</text>
+<text x="237" y="407" font-size="11" text-anchor="end" fill="#167a2e">AB19（A25）</text>
+<path d="M450,403 L480,403" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="446" y="407" font-size="10" text-anchor="end" fill="#000">Q7（18）</text>
+<text x="483" y="407" font-size="11" text-anchor="start" fill="#c2410c">+5 V（1 に固定）</text>
+<path d="M325,463 L325,479" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="325" cy="459" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="325" y="450" font-size="10" text-anchor="middle" fill="#000">P=Q（19）</text>
+<text x="325" y="492" font-size="11" text-anchor="middle" fill="#0040a0">MATCH#</text>
+<path d="M405,463 L405,479" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="405" cy="459" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="405" y="450" font-size="10" text-anchor="middle" fill="#000">P&gt;Q（1）</text>
+<text x="415" y="483" font-size="11" text-anchor="start" fill="#888888">（どこにもつながらないと見る）</text>
+<text x="30" y="510" font-size="10" text-anchor="start" fill="#333">SW2 の反対側は GND: ON（X）で 0、OFF（O）で Q のプルアップの 1。SW2 の 1〜3 番は比較器につながらない。</text>
+<text x="30" y="526" font-size="10" text-anchor="start" fill="#333">1〜7 ビット目は AB19〜AB13 = 1101011 と比べる → D6000h〜D7FFFh の 8 KB。0 ビット目（AB12 にあたる）は SW3 で決める（2.）。</text>
+<text x="30" y="542" font-size="10" text-anchor="start" fill="#333">MATCH# = L で ROM 2 個が選ばれる（CE#）。P と AB は直結（ラッチを通らない）。</text>
+<rect x="780" y="90" width="710" height="470" rx="8" fill="#fff4ea" stroke="#bbb"/>
+<text x="790" y="110" font-size="14" font-weight="bold" text-anchor="start" fill="#000">2. SW3（4 組の短絡）: 0 ビット目のつなぎ替え</text>
+<circle cx="1060" cy="140" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1048" y="131" font-size="10" text-anchor="middle" fill="#666">1</text>
+<circle cx="1200" cy="140" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1212" y="131" font-size="10" text-anchor="middle" fill="#666">8</text>
+<path d="M1066,140 L1194,140" fill="none" stroke="#c2410c" stroke-width="1.3" stroke-dasharray="5,4"/>
+<text x="1130.0" y="135" font-size="10" text-anchor="middle" fill="#c2410c">1-8</text>
+<circle cx="1060" cy="185" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1048" y="176" font-size="10" text-anchor="middle" fill="#666">2</text>
+<circle cx="1200" cy="185" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1212" y="176" font-size="10" text-anchor="middle" fill="#666">7</text>
+<path d="M1066,185 L1194,185" fill="none" stroke="#c2410c" stroke-width="1.3" stroke-dasharray="5,4"/>
+<text x="1130.0" y="180" font-size="10" text-anchor="middle" fill="#c2410c">2-7</text>
+<circle cx="1060" cy="230" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1048" y="221" font-size="10" text-anchor="middle" fill="#666">3</text>
+<circle cx="1200" cy="230" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1212" y="221" font-size="10" text-anchor="middle" fill="#666">6</text>
+<path d="M1066,230 L1194,230" fill="none" stroke="#c2410c" stroke-width="1.3" stroke-dasharray="5,4"/>
+<text x="1130.0" y="225" font-size="10" text-anchor="middle" fill="#c2410c">3-6</text>
+<circle cx="1060" cy="275" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1048" y="266" font-size="10" text-anchor="middle" fill="#666">4</text>
+<circle cx="1200" cy="275" r="6" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="1212" y="266" font-size="10" text-anchor="middle" fill="#666">5</text>
+<path d="M1066,275 L1194,275" fill="none" stroke="#c2410c" stroke-width="1.3" stroke-dasharray="5,4"/>
+<text x="1130.0" y="270" font-size="10" text-anchor="middle" fill="#c2410c">4-5</text>
+<path d="M1054,140 L1030,140 L1030,185 L1054,185" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1030" cy="162.5" r="3" fill="#000"/>
+<path d="M1030,162.5 L990,162.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="987" y="166.5" font-size="11" text-anchor="end" fill="#c2410c">X → 5A の Q0（3）</text>
+<path d="M1054,230 L990,230" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="987" y="234" font-size="11" text-anchor="end" fill="#c2410c">GND（ROM の 2 番 A12 も）</text>
+<path d="M1054,275 L990,275" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="987" y="279" font-size="11" text-anchor="end" fill="#c2410c">+5 V へのプルアップ</text>
+<path d="M1206,140 L1270,140" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1273" y="144" font-size="11" text-anchor="start" fill="#0040a0">LA12（ROM の A11）</text>
+<path d="M1206,185 L1270,185" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1273" y="189" font-size="11" text-anchor="start" fill="#c2410c">GND</text>
+<path d="M1206,230 L1230,230 L1230,275 L1206,275" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="1230" cy="252.5" r="3" fill="#000"/>
+<path d="M1230,252.5 L1270,252.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1273" y="256.5" font-size="11" text-anchor="start" fill="#c2410c">Y → 5A の P0（2）</text>
+<text x="1130" y="312" font-size="10" text-anchor="middle" fill="#666">SW3（上から見たピンの並び。破線が短絡する組）</text>
+<text x="800" y="345" font-size="12" font-weight="bold" text-anchor="start" fill="#000">設定ごとの 0 ビット目（LA12 = ラッチした AB12）</text>
+<text x="800" y="368" font-size="11" font-weight="bold" text-anchor="start" fill="#000">設定（[14]）</text>
+<text x="1050" y="368" font-size="11" font-weight="bold" text-anchor="start" fill="#000">Q0</text>
+<text x="1130" y="368" font-size="11" font-weight="bold" text-anchor="start" fill="#000">P0</text>
+<text x="1200" y="368" font-size="11" font-weight="bold" text-anchor="start" fill="#000">一致する番地</text>
+<text x="1320" y="368" font-size="11" font-weight="bold" text-anchor="start" fill="#000">見える版</text>
+<path d="M800,374 L1480,374" fill="none" stroke="#999" stroke-width="1"/>
+<text x="800" y="392" font-size="11" text-anchor="start" fill="#000">PC-9801M（1-8、3-6、出荷時）</text>
+<text x="1050" y="392" font-size="11" text-anchor="start" fill="#000">LA12</text>
+<text x="1130" y="392" font-size="11" text-anchor="start" fill="#000">0</text>
+<text x="1200" y="392" font-size="11" text-anchor="start" fill="#000">D6000h</text>
+<text x="1320" y="392" font-size="11" text-anchor="start" fill="#000">17h 版（ROM の 0000h〜）</text>
+<text x="800" y="412" font-size="11" text-anchor="start" fill="#000">それ以外の機種（1-8、4-5）</text>
+<text x="1050" y="412" font-size="11" text-anchor="start" fill="#000">LA12</text>
+<text x="1130" y="412" font-size="11" text-anchor="start" fill="#000">1</text>
+<text x="1200" y="412" font-size="11" text-anchor="start" fill="#000">D7000h</text>
+<text x="1320" y="412" font-size="11" text-anchor="start" fill="#000">19h 版（ROM の 1000h〜）</text>
+<text x="800" y="432" font-size="11" text-anchor="start" fill="#000">PC-9801 / XA（2-7、4-5）</text>
+<text x="1050" y="432" font-size="11" text-anchor="start" fill="#000">0</text>
+<text x="1130" y="432" font-size="11" text-anchor="start" fill="#000">1</text>
+<text x="1200" y="432" font-size="11" text-anchor="start" fill="#000">なし</text>
+<text x="1320" y="432" font-size="11" text-anchor="start" fill="#000">ROM は出ない（推測）</text>
+<text x="800" y="470" font-size="10" text-anchor="start" fill="#333">LA12 は ROM の A11 でもあるので、窓の番地の上下（AB12）がそのまま版を選ぶ。</text>
+<text x="800" y="486" font-size="10" text-anchor="start" fill="#333">PC-9801 / XA では P0 = 1、Q0 = 0 で P = Q にならない（P &gt; Q の出力はどこにもつながらないと見る）。</text>
+<text x="800" y="502" font-size="10" text-anchor="start" fill="#333">ROM の A12 は GND なので、ROM の 2000h〜3FFFh（ダンプで空）は読まれない。</text>
+<text x="800" y="518" font-size="10" text-anchor="start" fill="#333">（UX21 の拡張 ROM も A11 = AB12 で同じ割り当て。UX21 は A12 = AB13 にして 2000h〜に写しを置く）</text>
+<rect x="10" y="570" width="760" height="430" rx="8" fill="#f3f3f3" stroke="#bbb"/>
+<text x="20" y="590" font-size="14" font-weight="bold" text-anchor="start" fill="#000">3. 番地のラッチと ROM（3A、4A、WVF01、WVF02）</text>
+<rect x="190" y="625" width="170" height="130" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="275.0" y="641" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">74LS373 × 2</text>
+<text x="275.0" y="769" font-size="9" text-anchor="middle" fill="#666">3A（AB1〜AB6）、4A（AB7〜AB12）</text>
+<path d="M150,660 L190,660" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="194" y="664" font-size="10" text-anchor="start" fill="#000">D</text>
+<text x="147" y="664" font-size="11" text-anchor="end" fill="#167a2e">AB1〜AB12（A5〜A16）</text>
+<path d="M166,666 L174,654" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="172" y="652" font-size="9" text-anchor="middle" fill="#000">12</text>
+<path d="M150,695 L190,695" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="194" y="699" font-size="10" text-anchor="start" fill="#000">LE</text>
+<text x="147" y="699" font-size="11" text-anchor="end" fill="#0040a0">MRC#</text>
+<path d="M150,730 L182,730" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="186" cy="730" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="194" y="734" font-size="10" text-anchor="start" fill="#000">OE</text>
+<text x="147" y="734" font-size="11" text-anchor="end" fill="#c2410c">GND</text>
+<path d="M360,660 L470,660" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="356" y="664" font-size="10" text-anchor="end" fill="#000">Q</text>
+<path d="M446,666 L454,654" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="452" y="652" font-size="9" text-anchor="middle" fill="#000">12</text>
+<text x="372" y="648" font-size="11" text-anchor="start" fill="#0040a0">LA1〜LA12</text>
+<rect x="470" y="610" width="170" height="190" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<text x="555.0" y="626" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">M5L2764K × 2</text>
+<text x="555.0" y="814" font-size="9" text-anchor="middle" fill="#666">WVF01（偶数）、WVF02（奇数）</text>
+<text x="474" y="664" font-size="10" text-anchor="start" fill="#000">A0〜A11</text>
+<path d="M440,700 L470,700" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="474" y="704" font-size="10" text-anchor="start" fill="#000">A12</text>
+<text x="437" y="704" font-size="11" text-anchor="end" fill="#c2410c">GND</text>
+<path d="M420,740 L462,740" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="466" cy="740" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="474" y="744" font-size="10" text-anchor="start" fill="#000">CE（20）</text>
+<text x="417" y="744" font-size="11" text-anchor="end" fill="#0040a0">MATCH#</text>
+<path d="M420,775 L462,775" fill="none" stroke="#000" stroke-width="1.3"/>
+<circle cx="466" cy="775" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<text x="474" y="779" font-size="10" text-anchor="start" fill="#000">OE（22）</text>
+<text x="417" y="779" font-size="11" text-anchor="end" fill="#0040a0">MRC#</text>
+<path d="M640,660 L664,660" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="636" y="664" font-size="10" text-anchor="end" fill="#000">D0〜D7</text>
+<text x="667" y="664" font-size="11" text-anchor="start" fill="#888888">（先は未確認）</text>
+<text x="30" y="845" font-size="10" text-anchor="start" fill="#333">MRC# が H の間、ラッチは番地をそのまま通す。MRC# が L（メモリの読み出し）になった時の AB1〜AB12 を、読み出しが終わるまで保持する。</text>
+<text x="30" y="861" font-size="10" text-anchor="start" fill="#333">ROM の A0 = AB1（16 ビットのバスで、偶数と奇数の ROM が 1 語の下位と上位のバイトを受け持つ）。A1〜A10 の入力は並びからの推測。</text>
+<text x="30" y="877" font-size="10" text-anchor="start" fill="#333">ROM の CE# = MATCH#（窓の番地）、OE# = MRC#。A11 = LA12 なので、1 個の ROM の前半 2 KB が 17h 版、後半 2 KB が 19h 版になる。</text>
+<rect x="780" y="570" width="710" height="430" rx="8" fill="#fffbe6" stroke="#bbb"/>
+<text x="790" y="590" font-size="14" font-weight="bold" text-anchor="start" fill="#000">4. コマンドの受け取りと、読み出しの合図（8A、6C）</text>
+<path d="M960,628 L986,640 L960,652 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M900,640 L960,640" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M986,640 L1046,640" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="897" y="644" font-size="11" text-anchor="end" fill="#167a2e">MRC0（A35）</text>
+<text x="1049" y="644" font-size="11" text-anchor="start" fill="#0040a0">MRC#</text>
+<text x="973" y="664" font-size="9" text-anchor="middle" fill="#666">74LS244（8A）6 → 14 番（1G# = GND）</text>
+<path d="M960,693 L986,705 L960,717 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M900,705 L960,705" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M986,705 L1046,705" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="897" y="709" font-size="11" text-anchor="end" fill="#167a2e">BHE0（A44）</text>
+<text x="1049" y="709" font-size="11" text-anchor="start" fill="#888888">8A の 18 番（先は未確認）</text>
+<text x="973" y="729" font-size="9" text-anchor="middle" fill="#666">8A 2 → 18 番</text>
+<path d="M960,758 L986,770 L960,782 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<path d="M900,770 L960,770" fill="none" stroke="#000" stroke-width="1.3"/>
+<path d="M986,770 L1046,770" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="897" y="774" font-size="11" text-anchor="end" fill="#167a2e">AB0（A4）</text>
+<text x="1049" y="774" font-size="11" text-anchor="start" fill="#888888">8A の 16 番（先は未確認）</text>
+<text x="973" y="794" font-size="9" text-anchor="middle" fill="#666">8A 4 → 16 番</text>
+<path d="M990,830 H1015.0 A19.0,19.0 0 0 1 1015.0,868 H990 Z" fill="#fff" stroke="#000" stroke-width="1.4"/>
+<circle cx="986" cy="839.5" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M964,839.5 L982,839.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="961" y="843.5" font-size="11" text-anchor="end" fill="#0040a0">MATCH#</text>
+<circle cx="986" cy="858.5" r="4" fill="#fff" stroke="#000" stroke-width="1.3"/>
+<path d="M964,858.5 L982,858.5" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="961" y="862.5" font-size="11" text-anchor="end" fill="#0040a0">MRC#</text>
+<path d="M1034,849.0 L1060,849.0" fill="none" stroke="#000" stroke-width="1.3"/>
+<text x="1063" y="853.0" font-size="11" text-anchor="start" fill="#888888">ROMRD → 5C の 1、5 番（先は未確認）</text>
+<text x="1012.0" y="881" font-size="9" text-anchor="middle" fill="#666">74LS02（6C）2、3 → 1 番（NOR）</text>
+<text x="800" y="905" font-size="10" text-anchor="start" fill="#333">74LS244 は反転しないバッファ。MRC# は MRC0 と同じ向き（L でメモリの読み出し）。</text>
+<text x="800" y="921" font-size="10" text-anchor="start" fill="#333">ROMRD = 1 は「窓の番地のメモリの読み出し中」。NOR を、入力に ○ の付いた AND（正論理）として描いた。</text>
+<text x="800" y="937" font-size="10" text-anchor="start" fill="#a00000">推測: 5C（74LS00）で BHE0、AB0 と組み合わせ、偶数と奇数のバイトのデータバッファを開く。</text>
+</svg>
