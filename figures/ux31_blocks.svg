@@ -108,7 +108,7 @@
 <text x="928" y="652" font-size="11.5" text-anchor="start" fill="#000">（どれも SCLK の立ち上がり）</text>
 <text x="928" y="668" font-size="11.5" text-anchor="start" fill="#000">RSTOUT = !Q2·9A 2Q（7A の 11）→ 5C → P1-40</text>
 <text x="928" y="684" font-size="11.5" text-anchor="start" fill="#000">→ 1 から 0 にすると SCLK 4 クロック</text>
-<text x="928" y="700" font-size="11.5" text-anchor="start" fill="#000">   （約 400 ns）</text>
+<text x="928" y="700" font-size="11.5" text-anchor="start" fill="#000">   （約 500 ns）</text>
 <path d="M880,225 H900.0 V640 H920" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
 <text x="885" y="640" font-size="11" text-anchor="start" fill="#333">RST</text>
 <path d="M880,250 H900.0 V330 H920" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
