@@ -1,15 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="960" viewBox="0 0 1500 960" font-family="sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980" font-family="sans-serif">
 <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker></defs>
-<rect width="1500" height="960" fill="#ffffff"/>
+<rect width="1500" height="980" fill="#ffffff"/>
 <text x="20" y="30" font-size="18" font-weight="bold" text-anchor="start" fill="#000">PC-9801UX-31 ホストアダプタ（136-454836-B-02）の信号の流れ（導通で全ピンを確認、2026-10-25）</text>
 <text x="20" y="52" font-size="12" text-anchor="start" fill="#333">R、W、D、E、RST = 74LS14（9B）で反転した IOR0、IOW0、DACK0、EOP#、RESET0（H で有効）。IC は「行＋列」の位置で呼ぶ。式は解析結果（findings）の「UX-31 のホストアダプタの論理」。</text>
-<rect x="20" y="80" width="200" height="110" rx="6" fill="#eef4ff" stroke="#333"/>
+<text x="20" y="70" font-size="12" text-anchor="start" fill="#333">塗りの色は信号の種類（P2 のピン配置の図と同じ）: 青 = アドレス、緑 = データ、橙 = 制御（本体 → ユニット）、黄 = 制御（ユニット → 本体）、桃 = 電源、灰 = そのほか。</text>
+<g transform="translate(0,20)">
+<rect x="20" y="80" width="200" height="110" rx="6" fill="#e8f2fd" stroke="#333"/>
 <text x="28" y="98" font-size="13" font-weight="bold" text-anchor="start" fill="#000">P2 アドレス</text>
 <text x="28" y="116" font-size="11.5" text-anchor="start" fill="#000">2〜9: AB00〜AB07</text>
 <text x="28" y="132" font-size="11.5" text-anchor="start" fill="#000">13、14: AB10、AB11</text>
 <text x="28" y="148" font-size="11.5" text-anchor="start" fill="#000">34: CPUENB0</text>
 <text x="28" y="164" font-size="11.5" text-anchor="start" fill="#000">11、12（AB08、AB09）: 未使用</text>
-<rect x="20" y="210" width="200" height="130" rx="6" fill="#eef4ff" stroke="#333"/>
+<rect x="20" y="210" width="200" height="130" rx="6" fill="#fdf0e1" stroke="#333"/>
 <text x="28" y="228" font-size="13" font-weight="bold" text-anchor="start" fill="#000">P2 制御（本体 → ）</text>
 <text x="28" y="246" font-size="11.5" text-anchor="start" fill="#000">32: IOR0 → R</text>
 <text x="28" y="262" font-size="11.5" text-anchor="start" fill="#000">33: IOW0 → W</text>
@@ -17,25 +19,25 @@
 <text x="28" y="294" font-size="11.5" text-anchor="start" fill="#000">17: EOP#（8237）→ E</text>
 <text x="28" y="310" font-size="11.5" text-anchor="start" fill="#000">35: RESET0 → RST</text>
 <text x="28" y="326" font-size="11.5" text-anchor="start" fill="#000">31: SCLK</text>
-<rect x="20" y="360" width="200" height="60" rx="6" fill="#eef4ff" stroke="#333"/>
+<rect x="20" y="360" width="200" height="60" rx="6" fill="#e8f7eb" stroke="#333"/>
 <text x="28" y="378" font-size="13" font-weight="bold" text-anchor="start" fill="#000">P2 データ</text>
 <text x="28" y="396" font-size="11.5" text-anchor="start" fill="#000">22〜29: DB0〜DB7</text>
-<rect x="20" y="440" width="200" height="80" rx="6" fill="#eef4ff" stroke="#333"/>
+<rect x="20" y="440" width="200" height="80" rx="6" fill="#fdf8de" stroke="#333"/>
 <text x="28" y="458" font-size="13" font-weight="bold" text-anchor="start" fill="#000">P2 出力（ → 本体）</text>
 <text x="28" y="476" font-size="11.5" text-anchor="start" fill="#000">15: DRQ0（7438 8A の 11）</text>
 <text x="28" y="492" font-size="11.5" text-anchor="start" fill="#000">37: IR9（7438 8A の 8）</text>
 <text x="28" y="508" font-size="11.5" text-anchor="start" fill="#000">39: 7407 の出力（P1-24）</text>
-<rect x="20" y="540" width="200" height="60" rx="6" fill="#eef4ff" stroke="#333"/>
+<rect x="20" y="540" width="200" height="60" rx="6" fill="#fdeaea" stroke="#333"/>
 <text x="28" y="558" font-size="13" font-weight="bold" text-anchor="start" fill="#000">P2 電源・検出</text>
 <text x="28" y="576" font-size="11.5" text-anchor="start" fill="#000">19、20、40: +5 V</text>
 <text x="28" y="592" font-size="11.5" text-anchor="start" fill="#000">36: GND（本体側 SASI_CONFIG#）</text>
-<rect x="260" y="80" width="280" height="110" rx="6" fill="#e8f6ff" stroke="#333"/>
+<rect x="260" y="80" width="280" height="110" rx="6" fill="#e8f2fd" stroke="#333"/>
 <text x="268" y="98" font-size="13" font-weight="bold" text-anchor="start" fill="#000">80h / 82h の選択（11A、11B、6A）</text>
 <text x="268" y="116" font-size="11.5" text-anchor="start" fill="#000">74LS138 × 2 → 74LS02（6A）の 1、4 番</text>
 <text x="268" y="132" font-size="11.5" text-anchor="start" fill="#000">80h = AB07·!AB06〜!AB02·!AB01·!AB00</text>
 <text x="268" y="148" font-size="11.5" text-anchor="start" fill="#000">      ·!AB10·!AB11·!CPUENB0</text>
 <text x="268" y="164" font-size="11.5" text-anchor="start" fill="#000">82h = 同じで AB01 = 1</text>
-<rect x="260" y="210" width="280" height="170" rx="6" fill="#e8f6ff" stroke="#333"/>
+<rect x="260" y="210" width="280" height="170" rx="6" fill="#e8f2fd" stroke="#333"/>
 <text x="268" y="228" font-size="13" font-weight="bold" text-anchor="start" fill="#000">ストローブ（6B、7B、7A）</text>
 <text x="268" y="246" font-size="11.5" text-anchor="start" fill="#000">RD82 = R·82h（6B の 3）→ 257 の G</text>
 <text x="268" y="262" font-size="11.5" text-anchor="start" fill="#000">WR82 = W·82h（6B の 6）→ 273、4A の CLK</text>
@@ -46,11 +48,11 @@
 <text x="268" y="342" font-size="11.5" text-anchor="start" fill="#000">どれも L で有効（ODR の LE は 3A で反転）</text>
 <path d="M220,135 H240.0 V135 H260" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
 <path d="M220,275 H240.0 V275 H260" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
-<rect x="580" y="80" width="300" height="70" rx="6" fill="#fff0f0" stroke="#333"/>
+<rect x="580" y="80" width="300" height="70" rx="6" fill="#e8f7eb" stroke="#333"/>
 <text x="588" y="98" font-size="13" font-weight="bold" text-anchor="start" fill="#000">74LS245（11C）</text>
 <text x="588" y="116" font-size="11.5" text-anchor="start" fill="#000">A ↔ P2-22〜29、B ↔ 内部バス（ビットは逆順）</text>
 <text x="588" y="132" font-size="11.5" text-anchor="start" fill="#000">G = GND、B 側は 8 本とも 10 kΩ プルアップ</text>
-<rect x="580" y="165" width="300" height="120" rx="6" fill="#fff0f0" stroke="#333"/>
+<rect x="580" y="165" width="300" height="120" rx="6" fill="#e8f7eb" stroke="#333"/>
 <text x="588" y="183" font-size="13" font-weight="bold" text-anchor="start" fill="#000">OCR 74LS273（10B）82h 書き</text>
 <text x="588" y="201" font-size="11.5" text-anchor="start" fill="#000">bit6 RDSW（Q1）→ 257 の S</text>
 <text x="588" y="217" font-size="11.5" text-anchor="start" fill="#000">bit5 SEL（Q2）→ 5C → P1-44、データの出力</text>
@@ -58,16 +60,16 @@
 <text x="588" y="249" font-size="11.5" text-anchor="start" fill="#000">bit1 DMAE（Q6）→ 7B、5A</text>
 <text x="588" y="265" font-size="11.5" text-anchor="start" fill="#000">bit0 INTE（Q7）→ 4B（割り込み）</text>
 <text x="588" y="281" font-size="11.5" text-anchor="start" fill="#000">bit7 CHEN、bit4、bit2: 未使用</text>
-<rect x="580" y="300" width="300" height="85" rx="6" fill="#fff0f0" stroke="#333"/>
+<rect x="580" y="300" width="300" height="85" rx="6" fill="#e8f7eb" stroke="#333"/>
 <text x="588" y="318" font-size="13" font-weight="bold" text-anchor="start" fill="#000">ISR 74LS257 × 2（8C、7C）82h 読み</text>
 <text x="588" y="336" font-size="11.5" text-anchor="start" fill="#000">RDSW = 0: SW1〜SW8（10 kΩ プルアップ、閉 = 0）</text>
 <text x="588" y="352" font-size="11.5" text-anchor="start" fill="#000">RDSW = 1: REQ ACK BSY MSG C/D I/O 1 INT</text>
 <text x="588" y="368" font-size="11.5" text-anchor="start" fill="#000">（D1 は +5 V プルアップ、INT = 3A の 8）</text>
-<rect x="580" y="400" width="300" height="70" rx="6" fill="#fff0f0" stroke="#333"/>
+<rect x="580" y="400" width="300" height="70" rx="6" fill="#e8f7eb" stroke="#333"/>
 <text x="588" y="418" font-size="13" font-weight="bold" text-anchor="start" fill="#000">ODR 74LS373（10C）80h 書き</text>
 <text x="588" y="436" font-size="11.5" text-anchor="start" fill="#000">LE = WR80 の反転（3A の 10）</text>
 <text x="588" y="452" font-size="11.5" text-anchor="start" fill="#000">OE = !DRIVE（6A の 10）→ 7438 2A、2B</text>
-<rect x="580" y="485" width="300" height="70" rx="6" fill="#fff0f0" stroke="#333"/>
+<rect x="580" y="485" width="300" height="70" rx="6" fill="#e8f7eb" stroke="#333"/>
 <text x="588" y="503" font-size="13" font-weight="bold" text-anchor="start" fill="#000">IDR 74LS373（9C）80h 読み</text>
 <text x="588" y="521" font-size="11.5" text-anchor="start" fill="#000">LE = REQ·I/O·!ACK（5A の 13）</text>
 <text x="588" y="537" font-size="11.5" text-anchor="start" fill="#000">D ← 74LS240（3B）、OE = RD80</text>
@@ -75,25 +77,25 @@
 <text x="230" y="385" font-size="11" text-anchor="start" fill="#333">DB0〜DB7</text>
 <path d="M540,250 H560.0 V220 H580" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
 <text x="545" y="215" font-size="11" text-anchor="start" fill="#333">WR82</text>
-<rect x="920" y="80" width="300" height="105" rx="6" fill="#fffbe6" stroke="#333"/>
+<rect x="920" y="80" width="300" height="105" rx="6" fill="#fdf8de" stroke="#333"/>
 <text x="928" y="98" font-size="13" font-weight="bold" text-anchor="start" fill="#000">ACK（74LS74 4B の 1 番目）</text>
 <text x="928" y="116" font-size="11.5" text-anchor="start" fill="#000">D = CLR = REQ、PR = +5 V</text>
 <text x="928" y="132" font-size="11.5" text-anchor="start" fill="#000">CLK = !(D + RD80 + WR80)（6A の 13、6B の 8）</text>
 <text x="928" y="148" font-size="11.5" text-anchor="start" fill="#000">→ 80h の読み書きか DMA の 1 サイクルの</text>
 <text x="928" y="164" font-size="11.5" text-anchor="start" fill="#000">   終わりで ACK = 1。REQ が落ちると 0</text>
-<rect x="920" y="200" width="300" height="85" rx="6" fill="#fffbe6" stroke="#333"/>
+<rect x="920" y="200" width="300" height="85" rx="6" fill="#fdf8de" stroke="#333"/>
 <text x="928" y="218" font-size="13" font-weight="bold" text-anchor="start" fill="#000">フェーズの判別（74LS139 5B の後半）</text>
 <text x="928" y="236" font-size="11.5" text-anchor="start" fill="#000">2G = !REQ、2A = MSG、2B = C/D</text>
 <text x="928" y="252" font-size="11.5" text-anchor="start" fill="#000">2Y0 = データの REQ（MSG = 0、C/D = 0）</text>
 <text x="928" y="268" font-size="11.5" text-anchor="start" fill="#000">2Y2 = コマンド / ステータスの REQ（C/D = 1）</text>
-<rect x="920" y="300" width="300" height="120" rx="6" fill="#fffbe6" stroke="#333"/>
+<rect x="920" y="300" width="300" height="120" rx="6" fill="#fdf8de" stroke="#333"/>
 <text x="928" y="318" font-size="13" font-weight="bold" text-anchor="start" fill="#000">割り込み（4B の 2 番目、4C、5A）</text>
 <text x="928" y="336" font-size="11.5" text-anchor="start" fill="#000">D = CLR = INTE、Q̅ → 7438 8A → IR9</text>
 <text x="928" y="352" font-size="11.5" text-anchor="start" fill="#000">PR = !(I/O·2Y2)（4C の 3）: ステータスの REQ</text>
 <text x="928" y="368" font-size="11.5" text-anchor="start" fill="#000">CLK = !(DMAE + !2Y0)（5A の 1）:</text>
 <text x="928" y="384" font-size="11.5" text-anchor="start" fill="#000">  DMAE = 0 のデータの REQ でも立つ</text>
 <text x="928" y="400" font-size="11.5" text-anchor="start" fill="#000">INT（82h の bit0）= 3A の 8 = Q</text>
-<rect x="920" y="435" width="300" height="150" rx="6" fill="#fffbe6" stroke="#333"/>
+<rect x="920" y="435" width="300" height="150" rx="6" fill="#fdf8de" stroke="#333"/>
 <text x="928" y="453" font-size="13" font-weight="bold" text-anchor="start" fill="#000">DMA の要求（4A × 2、175、8A）</text>
 <text x="928" y="471" font-size="11.5" text-anchor="start" fill="#000">4A の 2 番目 ARM: D = DB1、CLK = WR82 の終わり</text>
 <text x="928" y="487" font-size="11.5" text-anchor="start" fill="#000">  CLR = RST + D·E（5A の 10、7A の 8）</text>
@@ -102,7 +104,7 @@
 <text x="928" y="535" font-size="11.5" text-anchor="start" fill="#000">175 の Q1 = PEND を SCLK で同期</text>
 <text x="928" y="551" font-size="11.5" text-anchor="start" fill="#000">DRQ0 = Q1·!(RST + D)（7438 8A の 11、L で有効）</text>
 <text x="928" y="567" font-size="11.5" text-anchor="start" fill="#000">→ 1 バイトごとに DACK0 で下ろし、EOP# で止める</text>
-<rect x="920" y="600" width="300" height="110" rx="6" fill="#fffbe6" stroke="#333"/>
+<rect x="920" y="600" width="300" height="110" rx="6" fill="#fdf8de" stroke="#333"/>
 <text x="928" y="618" font-size="13" font-weight="bold" text-anchor="start" fill="#000">RST のパルス（175、9A、7A）</text>
 <text x="928" y="636" font-size="11.5" text-anchor="start" fill="#000">RST ビット → 175 Q2 → Q3 → Q4 → 9A 1Q → 9A 2Q</text>
 <text x="928" y="652" font-size="11.5" text-anchor="start" fill="#000">（どれも SCLK の立ち上がり）</text>
@@ -115,27 +117,27 @@
 <text x="885" y="325" font-size="11" text-anchor="start" fill="#333">INTE</text>
 <path d="M880,265 H900.0 V470 H920" fill="none" stroke="#222" stroke-width="1.5" marker-end="url(#arr)"/>
 <text x="885" y="465" font-size="11" text-anchor="start" fill="#333">DMAE</text>
-<rect x="1260" y="80" width="220" height="125" rx="6" fill="#f3f3f3" stroke="#333"/>
+<rect x="1260" y="80" width="220" height="125" rx="6" fill="#e8f7eb" stroke="#333"/>
 <text x="1268" y="98" font-size="13" font-weight="bold" text-anchor="start" fill="#000">データの出力（7438 2A、2B）</text>
 <text x="1268" y="116" font-size="11.5" text-anchor="start" fill="#000">ODR の Q → P1 の 2〜16（DT0#〜7#）</text>
 <text x="1268" y="132" font-size="11.5" text-anchor="start" fill="#000">DBn → DTn（ビットは入れ替わらない）</text>
 <text x="1268" y="148" font-size="11.5" text-anchor="start" fill="#000">許可 DRIVE = SEL + !I/O</text>
 <text x="1268" y="164" font-size="11.5" text-anchor="start" fill="#000">（6A の 10 → 8B で反転）</text>
 <text x="1268" y="180" font-size="11.5" text-anchor="start" fill="#000">1 のときデータ線を L に引く</text>
-<rect x="1260" y="220" width="220" height="105" rx="6" fill="#f3f3f3" stroke="#333"/>
+<rect x="1260" y="220" width="220" height="105" rx="6" fill="#e8f7eb" stroke="#333"/>
 <text x="1268" y="238" font-size="13" font-weight="bold" text-anchor="start" fill="#000">データの受信（74LS240 3B）</text>
 <text x="1268" y="256" font-size="11.5" text-anchor="start" fill="#000">P1 の 2〜16 → 反転 → IDR の D</text>
 <text x="1268" y="272" font-size="11.5" text-anchor="start" fill="#000">DTn → DBn</text>
 <text x="1268" y="288" font-size="11.5" text-anchor="start" fill="#000">G（1、19）= DRIVE（8B の 4）:</text>
 <text x="1268" y="304" font-size="11.5" text-anchor="start" fill="#000">出力中は受信を止める</text>
-<rect x="1260" y="340" width="220" height="125" rx="6" fill="#f3f3f3" stroke="#333"/>
+<rect x="1260" y="340" width="220" height="125" rx="6" fill="#fdf8de" stroke="#333"/>
 <text x="1268" y="358" font-size="13" font-weight="bold" text-anchor="start" fill="#000">制御の受信（74LS240 2C）</text>
 <text x="1268" y="376" font-size="11.5" text-anchor="start" fill="#000">P1-36 BSY#、38 ACK#、42 MSG#、</text>
 <text x="1268" y="392" font-size="11.5" text-anchor="start" fill="#000">46 C#/D、48 REQ#、50 I#/O</text>
 <text x="1268" y="408" font-size="11.5" text-anchor="start" fill="#000">→ 反転して正論理</text>
 <text x="1268" y="424" font-size="11.5" text-anchor="start" fill="#000">→ 257、ACK、IDR の LE、5B</text>
 <text x="1268" y="440" font-size="11.5" text-anchor="start" fill="#000">G = GND</text>
-<rect x="1260" y="480" width="220" height="105" rx="6" fill="#f3f3f3" stroke="#333"/>
+<rect x="1260" y="480" width="220" height="105" rx="6" fill="#fdf0e1" stroke="#333"/>
 <text x="1268" y="498" font-size="13" font-weight="bold" text-anchor="start" fill="#000">制御の出力（7438 5C）</text>
 <text x="1268" y="516" font-size="11.5" text-anchor="start" fill="#000">SEL → P1-44 SEL#</text>
 <text x="1268" y="532" font-size="11.5" text-anchor="start" fill="#000">ACK → P1-38 ACK#</text>
@@ -163,4 +165,5 @@
 <text x="20" y="884" font-size="12" text-anchor="start" fill="#000">SASI 側では DBn = DTn に戻る。</text>
 <text x="20" y="902" font-size="12" text-anchor="start" fill="#000">使っていない IC の部分: 138 の Y2〜Y7 ほか、139 の前半と 2Y1、2Y3、32 の 2〜4 番目、7438 8A の 1、2 番目と 5C の 4 番目、</text>
 <text x="20" y="920" font-size="12" text-anchor="start" fill="#000">  240 2C の 2 → 18、4 → 16、7407 の 5 つ、04 / 14 / 7404 の余り、74 の Q̅（4B の 2 番目は Q̅ を使う）。</text>
+</g>
 </svg>
