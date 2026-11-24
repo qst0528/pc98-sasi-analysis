@@ -448,7 +448,7 @@
 <text x="1187.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 1187.0 491.0)">GND</text>
 <rect x="1218" y="422" width="62" height="130" rx="3" fill="#f3e58a" stroke="#444" stroke-width="1"/>
 <text x="1249.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">39</text>
-<text x="1253.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 1253.0 491.0)">HD LED?</text>
+<text x="1253.0" y="491.0" font-size="13" text-anchor="middle" transform="rotate(-90 1253.0 491.0)">HDLED#</text>
 <text x="1249.0" y="546" font-size="12" font-weight="bold" text-anchor="middle" fill="#1f5fbf">s37</text>
 <rect x="1284" y="422" width="62" height="130" rx="3" fill="#f4a6a6" stroke="#444" stroke-width="1"/>
 <text x="1315.0" y="437" font-size="13" font-weight="bold" text-anchor="middle">40</text>
